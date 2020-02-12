@@ -1,0 +1,262 @@
+header{
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+#header h1 {
+    display: block;
+    width: 100px;
+    font-size: 0;
+    padding: 10px 0 10px 0;
+    /* border: 1px solid green; */
+    /* margin: 0 auto; */
+}
+
+#header h1 img {
+    display: block;
+    width: 100%;
+}
+
+.contents {
+    width: 100%;
+    margin: 0 auto;
+    z-index: 999999;
+    /* border: 1px solid yellow; */
+}
+
+.contents nav {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    #header h1{
+        display: inline-block;
+    }
+    .toppage #header {
+        bottom: 0;
+
+    }
+
+    #header .contents h1{
+        opacity: 1;
+        margin-left: 10%;
+    }
+
+    .contents nav {
+        display: inline-block;
+        margin-right: 10%;
+    }
+    
+    .contents nav ul {
+        width: 450px;
+        height: 100%;
+        font-size: 0;
+        text-align: right;
+    }
+    
+    .contents nav ul li {
+        font-size: 1.5rem;
+        padding: 10px 0 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* fixedHeaderToTop.js */
+.header_index {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 9999;
+    background: #FFF;
+    /* position: fixed; */
+}
+
+.fixed_Top {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4999;
+    background: #FFF;
+    position: fixed;
+    top: 0;
+    height: 65.86px;
+}
+
+/* nav-bar固定於螢幕上方 */
+.fixed {
+	position: fixed;
+	top: 0;
+	height: 10vh;
+    z-index: 99;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.logofixed{
+    width: calc(313px / 3.6);
+    height: calc(198px / 3.6);
+    background-image: url('../../img/andOn-Logo.png');
+    background-size: cover;
+    position: absolute;
+    margin-top: 1rem;;
+    left: 3rem;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width:767px) and (max-width: 1199px){
+      header nav {
+        /* border: 1px solid red; */
+        background-color: #fff;
+        font-size: 0;
+        position: relative;
+        top: 0;
+        width:auto;
+        z-index: 99;
+    }
+    .header_index {
+        max-width: 1199px;
+    }
+    .top-navbar ul{
+        display: inline-block;
+        /* min-width: 600px; */
+        /* border: 1px solid blue; */
+        margin: auto 0;
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        transform: translate(-20%,-50%);
+        text-align: center;
+    }
+    .top-navbar li {
+        /* border: 1px solid black; */
+        display: inline-block;
+        /* padding: .3rem 0rem; */
+        padding: 10px 20px;
+    }
+    
+    .top-navbar li::before {
+        content: '|';
+        font-size: 1.4rem;
+        color: #aaa;
+        margin-right: 2.5rem;
+    }
+    
+    .top-navbar li:nth-child(1)::before {
+        visibility: hidden;
+        /* display: none; */
+    }
+    
+    .top-navbar a {
+        color: #aaa;
+        font-size: 1.2rem;
+        /* text-align: center; */
+    }
+    
+    .top-navbar a:hover{
+        color: #211f20;
+    }
+    
+    /* nav-bar固定於螢幕上方 */
+    .fixed {
+        position: fixed;
+        top: 0;
+        height: 10vh;
+        z-index: 99;
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    
+    .logofixed{
+        width: calc(313px / 3.6);
+        height: calc(198px / 3.6);
+        background-image: url('../../img/andOn-Logo.png');
+        background-size: cover;
+        position: absolute;
+        margin-top: 1rem;;
+        left: 3rem;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    header nav {
+       
+        /* border: 1px solid red; */
+        background-color: #fff;
+        font-size: 0;
+        position: relative;
+        top: 0;
+        width:auto;
+        z-index: 99;
+    }
+    .top-navbar ul{
+        display: inline-block;
+        /* min-width: 600px; */
+        /* border: 1px solid blue; */
+        margin: auto 0;
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        transform: translate(-20%,-50%);
+        text-align: center;
+    }
+    .top-navbar li {
+        /* border: 1px solid black; */
+        display: inline-block;
+        /* padding: .3rem 0rem; */
+        padding: 10px 20px;
+    }
+    
+    .top-navbar li::before {
+        content: '|';
+        font-size: 1.4rem;
+        color: #aaa;
+        margin-right: 2.5rem;
+    }
+    
+    .top-navbar li:nth-child(1)::before {
+        visibility: hidden;
+        /* display: none; */
+    }
+    
+    .top-navbar a {
+        color: #aaa;
+        font-size: 1.2rem;
+        /* text-align: center; */
+    }
+    
+    .top-navbar a:hover{
+        color: #211f20;
+    }
+    
+    /* nav-bar固定於螢幕上方 */
+    .fixed {
+        position: fixed;
+        top: 0;
+        height: 10vh;
+        z-index: 99;
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    
+    .logofixed{
+        width: calc(313px / 3.6);
+        height: calc(198px / 3.6);
+        background-image: url('../../img/andOn-Logo.png');
+        background-size: cover;
+        position: absolute;
+        margin-top: 1rem;;
+        left: 3rem;
+        cursor: pointer;
+    }
+}

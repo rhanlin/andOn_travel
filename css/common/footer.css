@@ -1,0 +1,560 @@
+.footer {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    background-color: #211F20;
+    padding: 6% 25% 15% 25%;
+}
+
+.viewport {
+    width: 100%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+}
+
+.footer .footer-s1,
+.footer .footer-content,
+.footer .social-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .footer-s1 {
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.footer .logo {
+    width: calc(313px / 6);
+    height: calc(198px / 6);
+    background-image: url('../../img/p2-andon-logo-light.png');
+    background-size: cover;
+    /* position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.footer .social-icon {
+    /* border: 1px solid pink; */
+    display: none;
+    position: relative;
+}
+
+.footer .social-icon::before {
+    content: '';
+    width: 1px;
+    height: 42%;
+    background-color: #EDEBD9;
+    position: absolute;
+    left: 0;
+}
+
+.footer .rhan {
+    display: none;
+}
+
+.copyReight {
+    width: 100%;
+    /* padding: 30px 0 60px 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #EDEBD9;
+    opacity: .5;
+    font-size: .8rem;
+    line-height: 1rem;
+}
+
+.footer .social-icon>span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #EDEBD9;
+    margin: .6rem 1.8rem;
+    background-size: cover;
+}
+
+
+.footer .social-icon>span:nth-child(1) {
+    background-image: url('../../img/icons/line.svg');
+}
+
+.footer .social-icon>span:nth-child(2) {
+    background-image: url('../../img/icons/fb.svg');
+}
+
+.footer .social-icon>span:nth-child(3) {
+    background-image: url('../../img/icons/pinterest.svg');
+}
+
+.footer .footer-content {
+    display: none;
+}
+
+.footer .footer-content ul {
+    /* border: 1px solid blue; */
+    height: 40%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+    margin: auto 0;
+}
+
+.footer .footer-content ul li {
+    color: #EDEBD9;
+    /* border: 1px solid #aaa; */
+    height: 25%;
+}
+
+.footer .footer-content ul li a {
+    color: #EDEBD9;
+}
+
+.footer .footer-content .footer-emailbox {
+    /* border: 1px solid purple; */
+    height: 40%;
+    width: 40%;
+    margin: auto 0;
+}
+
+.footer .footer-content .footer-emailbox .email-all {
+    /* border: 1px solid rosybrown; */
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 2.5rem;
+}
+
+.footer .footer-content .footer-emailbox .email-input {
+    width: 80%;
+    border: 3px solid #EDEBD9;
+    background-color: #EDEBD9;
+    ;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.footer .footer-content .footer-emailbox .email-input:focus {
+    border: 3px solid #EC7D69;
+}
+
+.footer .footer-content .footer-emailbox .email-submit {
+    padding: 0 1.5rem !important;
+    background-color: #2F989C;
+    font-weight: bold;
+    text-shadow: 1px 1px #2F989C;
+    color: #ffffff;
+    border: 1px solid #2F989C;
+    cursor: pointer;
+
+}
+
+
+.footer .footer-content .footer-emailbox p {
+    /* border: 1px solid green; */
+    font-size: 1.2rem;
+    color: #EDEBD9;
+    width: 100%;
+    display: inline-block;
+}
+
+@media screen and (min-width:767px) and (max-width: 1199px) {
+
+    .copyReight {
+        /* display: none; */
+        width: auto;
+        display: inline-block;
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .footer {
+        height: 540px;
+        width: 100%;
+        margin: 0;
+        background-color: #211F20;
+        padding: 0;
+    }
+
+    .viewport {
+        width: 100%;
+        /* border: 1px solid red; */
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        position: relative;
+    }
+
+    .footer .footer-s1,
+    .footer .footer-content,
+    .footer .social-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer .footer-s1 {
+        position: relative;
+        margin: 0 8%;
+
+    }
+
+    .footer .logo {
+        width: calc(313px / 3);
+        height: calc(198px / 3);
+        background-image: url('../../img/p2-andon-logo-light.png');
+        background-size: cover;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .footer .social-icon {
+        /* border: 1px solid pink; */
+        position: relative;
+    }
+
+    .footer .social-icon::before {
+        content: '';
+        width: 1px;
+        height: 42%;
+        background-color: #EDEBD9;
+        position: absolute;
+        left: 0;
+    }
+
+
+    .footer .rhan {
+        /* border: 1px solid blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 25%;
+        overflow-wrap: break-word;
+        overflow: hidden;
+    }
+
+    .footer .rhan p {
+        color: #EDEBD9;
+        font-size: 1rem;
+        padding: 10px 10%;
+    }
+
+
+    .footer .social-icon>span {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #EDEBD9;
+        margin: .6rem 1.8rem;
+        background-size: cover;
+    }
+
+
+    .footer .social-icon>span:nth-child(1) {
+        background-image: url('../../img/icons/line.svg');
+    }
+
+    .footer .social-icon>span:nth-child(2) {
+        background-image: url('../../img/icons/fb.svg');
+    }
+
+    .footer .social-icon>span:nth-child(3) {
+        background-image: url('../../img/icons/pinterest.svg');
+    }
+
+    .footer .footer-content {
+        width: 55%;
+        /* border: 1px solid yellow; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    .footer .footer-content ul {
+        /* border: 1px solid blue; */
+        height: 40%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: stretch;
+        margin: auto 0;
+    }
+
+    .footer .footer-content ul li {
+        color: #EDEBD9;
+        /* border: 1px solid #aaa; */
+        height: 25%;
+    }
+
+    .footer .footer-content ul li a {
+        color: #EDEBD9;
+    }
+
+    .footer .footer-content .footer-emailbox {
+        /* border: 1px solid purple; */
+        height: 40%;
+        width: 40%;
+        margin: auto 0;
+    }
+
+    .footer .footer-content .footer-emailbox .email-all {
+        /* border: 1px solid rosybrown; */
+        margin-top: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        height: 2.5rem;
+    }
+
+    .footer .footer-content .footer-emailbox .email-input {
+        width: 80%;
+        border: 3px solid #EDEBD9;
+        background-color: #EDEBD9;
+        ;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+    }
+
+    .footer .footer-content .footer-emailbox .email-input:focus {
+        border: 3px solid #EC7D69;
+    }
+
+    .footer .footer-content .footer-emailbox .email-submit {
+        padding: 0 1.5rem !important;
+        background-color: #2F989C;
+        font-weight: bold;
+        text-shadow: 1px 1px #2F989C;
+        color: #ffffff;
+        border: 1px solid #2F989C;
+        cursor: pointer;
+
+    }
+
+
+    .footer .footer-content .footer-emailbox p {
+        /* border: 1px solid green; */
+        font-size: 1.2rem;
+        color: #EDEBD9;
+        width: 100%;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .copyReight {
+        width: auto;
+        display: inline-block;
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .footer {
+        height: 540px;
+        width: 100%;
+        margin: 0;
+        background-color: #211F20;
+        padding: 0;
+    }
+
+    .viewport {
+        width: 100%;
+        /* border: 1px solid red; */
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        position: relative;
+    }
+
+    .footer .footer-s1,
+    .footer .footer-content,
+    .footer .social-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer .footer-s1 {
+        position: relative;
+        margin: 0 8%;
+
+    }
+
+    .footer .logo {
+        width: calc(313px / 3);
+        height: calc(198px / 3);
+        background-image: url('../../img/p2-andon-logo-light.png');
+        background-size: cover;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .footer .social-icon {
+        /* border: 1px solid pink; */
+        position: relative;
+    }
+
+    .footer .social-icon::before {
+        content: '';
+        width: 1px;
+        height: 42%;
+        background-color: #EDEBD9;
+        position: absolute;
+        left: 0;
+    }
+
+
+    .footer .rhan {
+        /* border: 1px solid blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 25%;
+    }
+
+    .footer .rhan p {
+        color: #EDEBD9;
+        font-size: 1rem;
+        padding: 10px 10%;
+    }
+
+
+    .footer .social-icon>span {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #EDEBD9;
+        margin: .6rem 1.8rem;
+        background-size: cover;
+    }
+
+
+    .footer .social-icon>span:nth-child(1) {
+        background-image: url('../../img/icons/line.svg');
+    }
+
+    .footer .social-icon>span:nth-child(2) {
+        background-image: url('../../img/icons/fb.svg');
+    }
+
+    .footer .social-icon>span:nth-child(3) {
+        background-image: url('../../img/icons/pinterest.svg');
+    }
+
+    .footer .footer-content {
+        width: 55%;
+        /* border: 1px solid yellow; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    .footer .footer-content ul {
+        /* border: 1px solid blue; */
+        height: 40%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: stretch;
+        margin: auto 0;
+    }
+
+    .footer .footer-content ul li {
+        color: #EDEBD9;
+        /* border: 1px solid #aaa; */
+        height: 25%;
+    }
+
+    .footer .footer-content ul li a {
+        color: #EDEBD9;
+    }
+
+    .footer .footer-content .footer-emailbox {
+        /* border: 1px solid purple; */
+        height: 40%;
+        width: 40%;
+        margin: auto 0;
+    }
+
+    .footer .footer-content .footer-emailbox .email-all {
+        /* border: 1px solid rosybrown; */
+        margin-top: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        height: 2.5rem;
+    }
+
+    .footer .footer-content .footer-emailbox .email-input {
+        width: 80%;
+        border: 3px solid #EDEBD9;
+        background-color: #EDEBD9;
+        ;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+    }
+
+    .footer .footer-content .footer-emailbox .email-input:focus {
+        border: 3px solid #EC7D69;
+    }
+
+    .footer .footer-content .footer-emailbox .email-submit {
+        padding: 0 1.5rem !important;
+        background-color: #2F989C;
+        font-weight: bold;
+        text-shadow: 1px 1px #2F989C;
+        color: #ffffff;
+        border: 1px solid #2F989C;
+        cursor: pointer;
+
+    }
+
+
+    .footer .footer-content .footer-emailbox p {
+        /* border: 1px solid green; */
+        font-size: 1.2rem;
+        color: #EDEBD9;
+        width: 100%;
+        display: inline-block;
+    }
+}

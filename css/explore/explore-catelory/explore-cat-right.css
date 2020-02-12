@@ -1,0 +1,177 @@
+.explore-box .left-box {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    width: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 1vw;
+}
+
+.tag-list {
+    width: 100%;
+    position: relative;
+}
+
+.special-article {
+    width: 100%;
+}
+
+.columnist {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.ad-banner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.tag-head {
+    width: 45%;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    border: 2px solid #2F989C;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-list .tag-head,
+.columnist .tag-head {
+    margin-top: 18px;
+}
+
+
+.tag-list .tag-head,
+.special-article .tag-head,
+.columnist .tag-head {
+    margin-left: 35px;
+}
+
+.tag-head::after {
+    content: '';
+    width:290px;
+    height: 2px;
+    background-color: #2F989C;
+    position: absolute;
+    bottom: -2px;
+    left: -25px;
+    border-radius: 999em;
+}
+
+.tag-head>h3 {
+    color: #2F989C;
+    font-size: 1.6rem;
+}
+
+.tag-box {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tag {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 18px 10px;
+}
+
+.tag>li {
+    display: inline-block;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 999em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    margin: 5px 5px;
+    white-space: nowrap;
+}
+
+.tag>li a {
+    color: #aaa;
+}
+
+.tag>li:hover {
+    cursor: pointer;
+    background-color: rgba(243, 152, 111, 1);
+    border-color: rgba(243, 152, 111, 1);
+    animation: abc .3s .18s ease;
+}
+
+.tag>li:hover a {
+    color: #fff;
+}
+
+.article-header-name li {
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.special-article .tag-box ul li a {
+    display: inline-block;
+    padding: 20px 10px;
+    width: 100%;
+    height: 30%;
+    color: #aaa;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    letter-spacing: .1rem;
+}
+
+
+.special-article .tag-box ul li a:hover {
+    cursor: pointer;
+    background-color: rgba(243, 152, 111, 1);
+    color: #fff;
+}
+
+.columnist-discription {
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.columnist-discription>p {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    color: #aaa;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.1rem;
+}
+
+.btn-more {
+    padding: 5px 15px;
+    border: 1px solid #aaa;
+    border-radius: 999em;
+    display: inline-block;
+    margin-bottom: 20px;
+    transform: translateX(215%);
+    color: #aaa;
+}
+
+.btn-more:hover {
+    cursor: pointer;
+    border: 1px solid rgba(243, 152, 111, 1);
+    background-color: rgba(243, 152, 111, 1);
+    color: #fff;
+}
+
+.ad-banner-img {
+    width: 95%;
+    height: 95%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url('../../../img/let-travel-to-jpn.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.ad-banner-img:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,1975 @@
+@media screen and (max-width: 375px) {
+
+    .content-box h3 {
+        padding-left: 1.6vw;
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0 0 10vw 0;
+    }
+
+    .news-title>h3 {
+        color: #333;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        font-size: 1.2rem;
+        padding: 0;
+        line-height: 2.8rem;
+        text-align: left;
+        letter-spacing: .1rem;
+    }
+
+    .news-item .news-title>p {
+        width: 100%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        color: #777;
+        font-size: 14px;
+        line-height: 1.1rem;
+        letter-spacing: .05rem;
+        font-weight: 300;
+    }
+
+    .explore-box {
+        width: auto;
+        margin: 0 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .explore-box .right-box {
+        width: 100%;
+    }
+
+    .news-box {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .content-box {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        border-radius: 10px;
+    }
+
+
+    .box-header {
+        width: 100%;
+        height: 40%;
+        background-color: #fff;
+        z-index: 98;
+        padding: 0 15px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .box-header>h4 {
+        color: #333;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        font-size: 1.2rem;
+        padding: 0;
+        line-height: 2.8rem;
+        text-align: left;
+        letter-spacing: .1rem;
+    }
+
+    .mag-botm {
+        margin-bottom: 20px;
+    }
+
+    .news-cat {
+        width: 100%;
+        height: 70vw;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+
+
+    .allinone-box .news-cat .box-discription {
+        transition: all 1s;
+    }
+
+
+    .box-left .title-ctr .news-cat:nth-child(1) {
+        background-image: url('../../../img/Niigata-firework.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+    .box-left .title-ctr .news-cat:nth-child(2) {
+        background-image: url('../../../img/joshin01.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+    .box-left .title-ctr .news-cat:nth-child(3) {
+        background-image: url('../../../img/tokyyo-hotel.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+    .box-right .title-ctr .news-cat:nth-child(1) {
+        background-image: url('../../../img/kor-Seoul.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+
+    .box-right .title-ctr .news-cat:nth-child(2) {
+        background-image: url('../../../img/kor-Busan.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+
+    .box-right .title-ctr .news-cat:nth-child(3) {
+        background-image: url('../../../img/kor-Seoul-food.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+    .dot-part {
+        display: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid #aaa;
+        position: absolute;
+        z-index: 99;
+        bottom: 10%;
+        margin-left: 10px;
+    }
+
+    .date {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        height: 10%;
+        bottom: 35%;
+        z-index: 99;
+        /* background-color: rgba(0,0,0,.5); */
+        background-color: #ACD1BF;
+        padding: 5px 8px;
+        border-radius: 8px 8px 0 0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
+        z-index: 1;
+        font-weight: 100;
+    }
+
+    .bg-date {
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: .4rem;
+    }
+
+    .news-month {
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .news-item {
+        height: 40%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: 9;
+        padding: 0 15px;
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
+    }
+
+    .news-item-pic {
+        height: 60%;
+        width: 100%;
+        /* border-radius: 10px; */
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 0;
+    }
+
+    .news-item-pic .news-item-pic1 {
+        width: 100%;
+        height: 100%;
+        background-image: url('../../../img/blog-oiran-4.jpg');
+        background-size: cover;
+        background-position: center;
+        /* border-radius: 10px; */
+        overflow: hidden;
+        transition: transform .8s;
+    }
+
+    .news-item-pic .news-item-pic2 {
+        width: 100%;
+        height: 100%;
+        background-image: url('../../../img/korea.jpg');
+        background-size: cover;
+        background-position: center;
+
+        overflow: hidden;
+        transition: transform .8s;
+    }
+
+    .news-item-pic3 {
+        width: 100%;
+        height: 100%;
+        background-image: url('../../../img/Hokkaido.jpg');
+        background-size: cover;
+        background-position: center;
+
+        overflow: hidden;
+        transition: transform .8s;
+    }
+
+    .hot-box {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .hot-cat-box {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .hot-cat-box h4 {
+        width: 100%;
+        height: 40%;
+        margin: 0 auto;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        font-size: 1.4rem;
+        padding: 0 15px;
+        line-height: 3rem;
+        text-align: left;
+        letter-spacing: .1rem;
+        position: absolute;
+        bottom: 0;
+        top: unset;
+        left: unset;
+        transform: unset;
+        color: #333;
+        background-color: #fff;
+    }
+
+    .hot-cat-box p {
+        width: 100%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        color: #777;
+        font-size: 14px;
+        line-height: 1.1rem;
+        letter-spacing: .05rem;
+        font-weight: 300;
+    }
+
+    .box-left {
+        width: 100%;
+        height: 70vw;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+
+    .hot-box .content-box .hot-cat-box .box-left>.title-ctr {
+        background-image: url('../../../img/beautiful-korea.jpg');
+        background-size: cover;
+        background-position: center;
+        transition: filter 1.2s, transform .8s;
+        border-radius: 10px;
+    }
+
+    .box-right {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .m_box {
+        height: auto;
+    }
+
+    .m_none {
+        display: none;
+    }
+
+    .hot-cat-right-top,
+    .hot-cat-right-down {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hot-cat-right-top {
+        overflow: hidden;
+        height: 70vw;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+
+    .hot-cat-right-down {
+        border-radius: 0 0 10px 10px;
+        overflow: hidden;
+    }
+
+    .hotcat-rd-r,
+    .hotcat-rd-l {
+        width: 100%;
+        height: 70vw;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+
+    .hotcat-rd-r {
+        border-radius: 0 0 0 10px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+
+
+    .news-title {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .box-left .title-ctr>p,
+    .hot-cat-right-down .title-ctr>p,
+    .hot-cat-right-top .title-ctr>p {
+        color: #fff;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+
+    }
+
+    .box-discription {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box-discription>p {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        width: 100%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        z-index: 99;
+        padding: 0 15px;
+        color: #777;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        letter-spacing: .05rem;
+        font-weight: 300;
+    }
+
+    .bottom-bottom {
+        position: absolute;
+        bottom: 0;
+    }
+
+
+    .bottom-left {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+    }
+
+    .title-ctr {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        padding: 10px 10px;
+    }
+
+    .hot-box .content-box .hot-cat-box .box-left>.title-ctr,
+    .box-right .hot-cat-right-top>.title-ctr,
+    .box-right .hot-cat-right-down .hotcat-rd-r>.title-ctr,
+    .box-right .hot-cat-right-down .hotcat-rd-l>.title-ctr {
+        filter: grayscale(0.6);
+        overflow: hidden;
+    }
+
+    /* .hot-box .content-box .hot-cat-box .box-left>.title-ctr:hover,
+    .box-right .hot-cat-right-top>.title-ctr:hover,
+    .box-right .hot-cat-right-down .hotcat-rd-r>.title-ctr:hover,
+    .box-right .hot-cat-right-down .hotcat-rd-l>.title-ctr:hover {
+        cursor: pointer;
+        filter: grayscale(0);
+        transform: scale(1.2);
+        overflow: hidden;
+    } */
+
+    .box-right .hot-cat-right-top>.title-ctr {
+        background-image: url('../../../img/japanese-food.jpg');
+        background-size: cover;
+        background-position: center;
+        transition: filter 1.2s, transform .8s;
+        border-radius: 10px;
+    }
+
+    .box-right .hot-cat-right-down .hotcat-rd-r>.title-ctr {
+        background-image: url('../../../img/japan-tokyo.jpg');
+        background-size: cover;
+        background-position: center;
+        transition: filter 1.2s, transform .8s;
+        border-radius: 10px;
+    }
+
+    .box-right .hot-cat-right-down .hotcat-rd-l>.title-ctr {
+        background-image: url('../../../img/japan-west-north.jpg');
+        background-size: cover;
+        background-position: center;
+        transition: filter 1.2s, transform .8s;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .allinone-box .title-ctr {
+        padding: 0;
+    }
+
+    .allinone-box {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    /* text */
+    .text-center {
+        text-align: center;
+    }
+
+    .text-bgc-text {
+        width: 100%;
+        height: 25%;
+        position: absolute;
+        bottom: 0;
+        background-color: #fff;
+        padding: 12px 15px;
+    }
+}
+
+@media screen and (min-width:376px) and (max-width: 766px) {
+
+    .explore-box {
+        width: auto;
+        margin: 0 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08);
+    border-radius: 10px; */
+        margin-bottom: 2rem;
+        /* padding: 1rem; */
+    }
+
+    .explore-box .right-box {
+        width: 100%;
+    }
+
+    .news-box {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .content-box {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    .content-box h3 {
+        padding-left: 1.6vw;
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0 0 10vw 0;
+    }
+
+    .box-header {
+        width: 100%;
+        height: 40%;
+        background-color: #fff;
+        z-index: 98;
+        padding: 0 15px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .box-header>h4 {
+        width: 100%;
+        margin: 0 auto;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        color: #333;
+        font-size: 1.4rem;
+        padding: 0;
+        line-height: 3rem;
+        text-align: left;
+        letter-spacing: .1rem;
+    }
+
+    .mag-botm {
+        margin-bottom: 20px;
+    }
+
+    .news-cat {
+        width: 100%;
+        height: 70vw;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    .allinone-box .news-cat .box-discription {
+        transition: all 1s;
+    }
+
+    .box-left .title-ctr .news-cat:nth-child(1) {
+        background-image: url('../../../img/Niigata-firework.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+    .box-left .title-ctr .news-cat:nth-child(2) {
+        background-image: url('../../../img/joshin01.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+    .box-left .title-ctr .news-cat:nth-child(3) {
+        background-image: url('../../../img/tokyyo-hotel.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+    .box-right .title-ctr .news-cat:nth-child(1) {
+        background-image: url('../../../img/kor-Seoul.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+
+    .box-right .title-ctr .news-cat:nth-child(2) {
+        background-image: url('../../../img/kor-Busan.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+
+    .box-right .title-ctr .news-cat:nth-child(3) {
+        background-image: url('../../../img/kor-Seoul-food.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+    .dot-part {
+        display: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid #aaa;
+        position: absolute;
+        z-index: 99;
+        bottom: 10%;
+        margin-left: 10px;
+    }
+
+    .date {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        height: 10%;
+        bottom: 35%;
+        z-index: 99;
+        /* background-color: rgba(0,0,0,.5); */
+        background-color: #ACD1BF;
+        padding: 5px 8px;
+        border-radius: 8px 8px 0 0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
+        z-index: 1;
+        font-weight: 100;
+    }
+
+    .bg-date {
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: .4rem;
+    }
+
+    .news-month {
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .news-item {
+        height: 40%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: 9;
+        padding: 0 15px;
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
+    }
+
+    .news-item-pic {
+        height: 60%;
+        width: 100%;
+        /* border-radius: 10px; */
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 0;
+    }
+
+    .news-item-pic .news-item-pic1 {
+        width: 100%;
+        height: 100%;
+        background-image: url('../../../img/blog-oiran-4.jpg');
+        background-size: cover;
+        background-position: center;
+        /* border-radius: 10px; */
+        overflow: hidden;
+        transition: transform .8s;
+    }
+
+    .news-item-pic .news-item-pic2 {
+        width: 100%;
+        height: 100%;
+        background-image: url('../../../img/korea.jpg');
+        background-size: cover;
+        background-position: center;
+
+        overflow: hidden;
+        transition: transform .8s;
+    }
+
+    .news-item-pic3 {
+        width: 100%;
+        height: 100%;
+        background-image: url('../../../img/Hokkaido.jpg');
+        background-size: cover;
+        background-position: center;
+
+        overflow: hidden;
+        transition: transform .8s;
+    }
+
+    .hot-box {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .hot-cat-box {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .hot-cat-box h4 {
+        /* font-size: 1.2rem;
+        line-height: 1.6rem;
+        color: #fff;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
+        width: 60%;
+        text-align: center; */
+        width: 100%;
+        height: 40%;
+        margin: 0 auto;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        font-size: 1.4rem;
+        padding: 0 15px;
+        line-height: 3rem;
+        text-align: left;
+        letter-spacing: .1rem;
+        position: absolute;
+        bottom: 0;
+        top: unset;
+        left: unset;
+        transform: unset;
+        color: #333;
+        background-color: #fff;
+    }
+
+    .hot-cat-box p {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        color: #fff;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
+    }
+
+    .text-bgc-text {
+        width: 100%;
+        height: 25%;
+        position: absolute;
+        bottom: 0;
+        background-color: #fff;
+
+    }
+
+    .text-bgc-text p {
+        text-shadow: unset;
+        color: #777;
+        width: 100%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        letter-spacing: .05rem;
+        font-weight: 300;
+        padding: 0 15px;
+    }
+
+
+    .box-left {
+        width: 100%;
+        height: 70vw;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+
+
+    .hot-box .content-box .hot-cat-box .box-left>.title-ctr {
+        background-image: url('../../../img/beautiful-korea.jpg');
+        background-size: cover;
+        background-position: center;
+        transition: filter 1.2s, transform .8s;
+        border-radius: 10px;
+    }
+
+    .box-right {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .m_box {
+        height: auto;
+    }
+
+    .m_none {
+        display: none;
+    }
+
+    .hot-cat-right-top,
+    .hot-cat-right-down {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hot-cat-right-top {
+        border-radius: 10px;
+        overflow: hidden;
+        height: 70vw;
+        margin-bottom: 20px;
+    }
+
+
+    .hot-cat-right-down {
+        border-radius: 0 0 10px 10px;
+        overflow: hidden;
+    }
+
+    .hotcat-rd-r,
+    .hotcat-rd-l {
+        width: 100%;
+        height: 70vw;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+
+    .hotcat-rd-r {
+        border-radius: 0 0 0 10px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+
+
+    .news-title {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .news-title>h3 {
+        color: #333;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        font-size: 1.4rem;
+        padding: 0;
+        line-height: 3rem;
+        text-align: left;
+        letter-spacing: .1rem;
+    }
+
+    .news-item .news-title>p {
+        width: 100%;
+        /* position: absolute; */
+        /* height: 80%; */
+        /* bottom: .5vw; */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        color: #777;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        /* padding: 5px 0px; */
+        letter-spacing: .05rem;
+        font-weight: 300;
+    }
+
+    .box-left .title-ctr>p,
+    .hot-cat-right-down .title-ctr>p,
+    .hot-cat-right-top .title-ctr>p {
+        color: #fff;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+
+    }
+
+    .box-discription {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box-discription>p {
+        position: absolute;
+        top: 76%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        width: 100%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        z-index: 99;
+        padding: 0 15px;
+        color: #777;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        letter-spacing: .05rem;
+        font-weight: 300;
+    }
+
+    .bottom-bottom {
+        position: absolute;
+        bottom: 0;
+    }
+
+
+    .bottom-left {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+    }
+
+    .title-ctr {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        padding: 10px 10px;
+    }
+
+    .hot-box .content-box .hot-cat-box .box-left>.title-ctr,
+    .box-right .hot-cat-right-top>.title-ctr,
+    .box-right .hot-cat-right-down .hotcat-rd-r>.title-ctr,
+    .box-right .hot-cat-right-down .hotcat-rd-l>.title-ctr {
+        filter: grayscale(0.6);
+        overflow: hidden;
+    }
+
+    /* 
+    .hot-box .content-box .hot-cat-box .box-left>.title-ctr:hover,
+    .box-right .hot-cat-right-top>.title-ctr:hover,
+    .box-right .hot-cat-right-down .hotcat-rd-r>.title-ctr:hover,
+    .box-right .hot-cat-right-down .hotcat-rd-l>.title-ctr:hover {
+        cursor: pointer;
+        filter: grayscale(0);
+        transform: scale(1.2);
+        overflow: hidden;
+    } */
+
+    .box-right .hot-cat-right-top>.title-ctr {
+        background-image: url('../../../img/japanese-food.jpg');
+        background-size: cover;
+        background-position: center;
+        transition: filter 1.2s, transform .8s;
+        border-radius: 10px;
+    }
+
+    .box-right .hot-cat-right-down .hotcat-rd-r>.title-ctr {
+        background-image: url('../../../img/japan-tokyo.jpg');
+        background-size: cover;
+        background-position: center;
+        transition: filter 1.2s, transform .8s;
+        border-radius: 10px;
+    }
+
+    .box-right .hot-cat-right-down .hotcat-rd-l>.title-ctr {
+        background-image: url('../../../img/japan-west-north.jpg');
+        background-size: cover;
+        background-position: center;
+        transition: filter 1.2s, transform .8s;
+        border-radius: 10px;
+    }
+
+    .allinone-box .title-ctr {
+        padding: 0;
+    }
+
+    .allinone-box {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    /* text */
+    .text-center {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:570px) and (max-width: 766px) {
+
+    .news-title>h3,
+    .hot-cat-box h4,
+    .box-header>h4 {
+        -webkit-line-clamp: 2;
+        line-height: 1.5rem;
+        padding-top: 3vw;
+    }
+
+    .news-item .news-title>p {
+        padding: 25px 0;
+        max-height: 100px;
+        -webkit-line-clamp: 4;
+    }
+
+    .text-bgc-text {
+        padding: 4vw 0;
+    }
+
+    .box-discription>p {
+        padding: 4vw 15px;
+        height: 19%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .news-item .news-title>p {
+        -webkit-line-clamp: 2;
+    }
+}
+
+
+@media screen and (min-width:767px) and (max-width: 1199px) {
+    
+    .text-bgc-text {
+        display: none;
+    }
+
+    .text-bgc-text p {
+        display: none;
+    }
+
+    .m_box {
+        height: unset;
+    }
+
+    .m_none {
+        display: none!important;
+    }
+
+    .explore-box {
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+
+    .explore-box .right-box {
+        width: 100%;
+    }
+
+    .news-box {
+        width: 100%;
+        height: 65vh;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .content-box {
+        padding: 10px;
+        height: 100%;
+        width: 98%;
+        position: relative;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        border-radius: 10px;
+    }
+
+    .content-box h3 {
+        padding-left: 1.6vw;
+        font-size: 1.8rem;
+    }
+
+    .box-header {
+        width: 100%;
+        height: 20%;
+        background-color: #aaa;
+        z-index: 98;
+    }
+
+    .box-header>h4 {
+        width: 95%;
+        margin: 0 auto;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    .mag-botm {
+        margin-bottom: 20px;
+    }
+
+    .news-cat {
+        width: 100%;
+        height: 32%;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .news-cat:hover .dot-part {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid rgba(243, 152, 111, 1);
+        background-color: rgba(243, 152, 111, 1);
+        animation: abc .3s .18s ease;
+    }
+
+    .news-cat:hover .news-item {
+        border-color: rgba(243, 152, 111, 1);
+        border-top: 10px solid rgba(243, 152, 111, 1);
+    }
+
+    .news-cat:hover .news-item h3 {
+        color: black;
+    }
+
+    .news-cat:hover .news-item p {
+        color: rgb(114, 114, 114);
+    }
+
+    .news-cat:hover .news-item-pic1,
+    .news-cat:hover .news-item-pic2,
+    .news-cat:hover .news-item-pic3 {
+        transform: scale(1.3);
+    }
+
+    .allinone-box .news-cat .box-discription {
+        transition: all 1s;
+    }
+
+    .allinone-box .news-cat:hover .box-discription {
+        display: block;
+        transform: translateY(0);
+    }
+
+    .allinone-box .news-cat:hover .box-header {
+        background-color: rgba(243, 152, 111, 1);
+    }
+
+
+    .box-left .title-ctr .news-cat:nth-child(1) {
+        background-image: url('../../../img/Niigata-firework.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+    .box-left .title-ctr .news-cat:nth-child(2) {
+        background-image: url('../../../img/joshin01.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+    .box-left .title-ctr .news-cat:nth-child(3) {
+        background-image: url('../../../img/tokyyo-hotel.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+    .box-right .title-ctr .news-cat:nth-child(1) {
+        background-image: url('../../../img/kor-Seoul.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+
+    .box-right .title-ctr .news-cat:nth-child(2) {
+        background-image: url('../../../img/kor-Busan.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+
+    .box-right .title-ctr .news-cat:nth-child(3) {
+        background-image: url('../../../img/kor-Seoul-food.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+    .dot-part {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid #aaa;
+    }
+
+    .date {
+        height: 100%;
+        width: 12%;
+    }
+
+    .bg-date {
+        font-size: 4rem;
+        color: #2F989C;
+        margin-bottom: .8rem;
+    }
+
+    .news-month {
+        color: #aaa;
+    }
+
+    .news-item {
+        height: 100%;
+        width: 60%;
+        border: 1px solid rgb(187, 187, 187);
+        border-top: 10px solid #aaa;
+        border-radius: 10px;
+    }
+
+    .news-item-pic {
+        height: 100%;
+        width: 20%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .news-item-pic .news-item-pic1 {
+        width: 100%;
+        height: 100%;
+        background-image: url('../../../img/blog-oiran-4.jpg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform .8s;
+    }
+
+    .news-item-pic .news-item-pic2 {
+        width: 100%;
+        height: 100%;
+        background-image: url('../../../img/korea.jpg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform .8s;
+    }
+
+    .news-item-pic3 {
+        width: 100%;
+        height: 100%;
+        background-image: url('../../../img/Hokkaido.jpg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform .8s;
+    }
+
+    .hot-box {
+        width: 100%;
+        height: 60vh;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .hot-cat-box {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .hot-cat-box h4 {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        color: #fff;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
+        width: 60%;
+        text-align: center;
+    }
+
+    .hot-cat-box p {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        color: #fff;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
+    }
+
+    .box-left {
+        width: 49.5%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    .hot-box .content-box .hot-cat-box .box-left>.title-ctr {
+        background-image: url('../../../img/beautiful-korea.jpg');
+        background-size: cover;
+        background-position: center;
+        transition: filter 1.2s, transform .8s;
+    }
+
+    .box-right {
+        width: 49.5%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .hot-cat-right-top,
+    .hot-cat-right-down {
+        width: 100%;
+        height: 50%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hot-cat-right-top {
+        border-radius: 0 10px 0 0;
+        overflow: hidden;
+    }
+
+
+    .hot-cat-right-down {
+        border-radius: 0 0 10px 10px;
+        overflow: hidden;
+    }
+
+    .hotcat-rd-r,
+    .hotcat-rd-l {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .hotcat-rd-r {
+        border-radius: 0 0 0 10px;
+    }
+
+
+
+    .news-title {
+        width: 95%;
+        height: 90%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .news-title>h3 {
+        width: 100%;
+        height: 40px;
+        color: rgb(104, 104, 104);
+        position: absolute;
+        top: 0;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        font-size: 1.6rem;
+        padding-left: unset;
+    }
+
+    .news-item .news-title>p {
+        width: 100%;
+        position: absolute;
+        bottom: .5vw;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        color: #aaa;
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .box-left .title-ctr>p,
+    .hot-cat-right-down .title-ctr>p,
+    .hot-cat-right-top .title-ctr>p {
+        color: #fff;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+
+    }
+
+    .box-discription {
+        width: 100%;
+        height: 80%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0));
+        z-index: -1;
+        transform: translateY(-80%);
+    }
+
+    .box-discription>p {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        width: 95%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        z-index: 99;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        width: 80%;
+    }
+
+    .bottom-bottom {
+        position: absolute;
+        bottom: 0;
+    }
+
+
+    .bottom-left {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+    }
+
+    .title-ctr {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        padding: 10px 10px;
+    }
+
+    .hot-box .content-box .hot-cat-box .box-left>.title-ctr,
+    .box-right .hot-cat-right-top>.title-ctr,
+    .box-right .hot-cat-right-down .hotcat-rd-r>.title-ctr,
+    .box-right .hot-cat-right-down .hotcat-rd-l>.title-ctr {
+        filter: grayscale(0.6);
+        overflow: hidden;
+    }
+
+    .hot-box .content-box .hot-cat-box .box-left>.title-ctr:hover,
+    .box-right .hot-cat-right-top>.title-ctr:hover,
+    .box-right .hot-cat-right-down .hotcat-rd-r>.title-ctr:hover,
+    .box-right .hot-cat-right-down .hotcat-rd-l>.title-ctr:hover {
+        cursor: pointer;
+        filter: grayscale(0);
+        transform: scale(1.2);
+        overflow: hidden;
+    }
+
+    .box-right .hot-cat-right-top>.title-ctr {
+        background-image: url('../../../img/japanese-food.jpg');
+        background-size: cover;
+        background-position: center;
+        transition: filter 1.2s, transform .8s;
+    }
+
+    .box-right .hot-cat-right-down .hotcat-rd-r>.title-ctr {
+        background-image: url('../../../img/japan-tokyo.jpg');
+        background-size: cover;
+        background-position: center;
+        transition: filter 1.2s, transform .8s;
+    }
+
+    .box-right .hot-cat-right-down .hotcat-rd-l>.title-ctr {
+        background-image: url('../../../img/japan-west-north.jpg');
+        background-size: cover;
+        background-position: center;
+        transition: filter 1.2s, transform .8s;
+    }
+
+    .allinone-box .title-ctr {
+        padding: 0;
+    }
+
+    .allinone-box {
+        width: 100%;
+        height: 80vh;
+        position: relative;
+    }
+
+    /* text */
+    .text-center {
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .text-bgc-text {
+        display: none;
+    }
+
+    .text-bgc-text p {
+        display: none;
+    }
+
+    .m_box {
+        height: unset;
+    }
+
+    .m_none {
+        display: unset;
+    }
+
+    .explore-box {
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        min-height: 2100px;
+    }
+
+    .explore-box .right-box {
+        width: 82%;
+    }
+
+    .news-box {
+        width: 100%;
+        height: 65vh;
+        position: relative;
+        margin-bottom: 2rem;
+        min-height: 580px;
+    }
+
+    .content-box {
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        border-radius: 10px;
+        min-height: 550px;
+    }
+
+    .content-box h3 {
+        padding-left: 1.6vw;
+        font-size: 1.8rem;
+    }
+
+    .box-header {
+        width: 100%;
+        height: 20%;
+        background-color: #aaa;
+        z-index: 98;
+    }
+
+    .box-header>h4 {
+        width: 95%;
+        margin: 0 auto;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    .mag-botm {
+        margin-bottom: 20px;
+    }
+
+    .news-cat {
+        width: 100%;
+        height: 32%;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .news-cat:hover .dot-part {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid rgba(243, 152, 111, 1);
+        background-color: rgba(243, 152, 111, 1);
+        animation: abc .3s .18s ease;
+    }
+
+    .news-cat:hover .news-item {
+        border-color: rgba(243, 152, 111, 1);
+        border-top: 10px solid rgba(243, 152, 111, 1);
+    }
+
+    .news-cat:hover .news-item h3 {
+        color: black;
+    }
+
+    .news-cat:hover .news-item p {
+        color: rgb(114, 114, 114);
+    }
+
+    .news-cat:hover .news-item-pic1,
+    .news-cat:hover .news-item-pic2,
+    .news-cat:hover .news-item-pic3 {
+        transform: scale(1.3);
+    }
+
+    .allinone-box .news-cat .box-discription {
+        transition: all 1s;
+    }
+
+    .allinone-box .news-cat:hover .box-discription {
+        display: block;
+        transform: translateY(0);
+    }
+
+    .allinone-box .news-cat:hover .box-header {
+        background-color: rgba(243, 152, 111, 1);
+    }
+
+
+    .box-left .title-ctr .news-cat:nth-child(1) {
+        background-image: url('../../../img/Niigata-firework.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+    .box-left .title-ctr .news-cat:nth-child(2) {
+        background-image: url('../../../img/joshin01.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+    .box-left .title-ctr .news-cat:nth-child(3) {
+        background-image: url('../../../img/tokyyo-hotel.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+    .box-right .title-ctr .news-cat:nth-child(1) {
+        background-image: url('../../../img/kor-Seoul.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+
+    .box-right .title-ctr .news-cat:nth-child(2) {
+        background-image: url('../../../img/kor-Busan.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+
+    .box-right .title-ctr .news-cat:nth-child(3) {
+        background-image: url('../../../img/kor-Seoul-food.jpg');
+        background-size: cover;
+        background-position: center 70%;
+    }
+
+    .dot-part {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid #aaa;
+    }
+
+    .date {
+        height: 100%;
+        width: 12%;
+    }
+
+    .bg-date {
+        font-size: 4rem;
+        color: #2F989C;
+        margin-bottom: .8rem;
+    }
+
+    .news-month {
+        color: #aaa;
+    }
+
+    .news-item {
+        height: 100%;
+        width: 60%;
+        border: 1px solid rgb(187, 187, 187);
+        border-top: 10px solid #aaa;
+        border-radius: 10px;
+    }
+
+    .news-item-pic {
+        height: 100%;
+        width: 20%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .news-item-pic .news-item-pic1 {
+        width: 100%;
+        height: 100%;
+        background-image: url('../../../img/blog-oiran-4.jpg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform .8s;
+    }
+
+    .news-item-pic .news-item-pic2 {
+        width: 100%;
+        height: 100%;
+        background-image: url('../../../img/korea.jpg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform .8s;
+    }
+
+    .news-item-pic3 {
+        width: 100%;
+        height: 100%;
+        background-image: url('../../../img/Hokkaido.jpg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform .8s;
+    }
+
+    .hot-box {
+        width: 100%;
+        height: 60vh;
+        position: relative;
+        margin-bottom: 2rem;
+        min-height: 738px;
+    }
+
+    .hot-cat-box {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .hot-cat-box h4 {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        color: #fff;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
+        width: 60%;
+        text-align: center;
+    }
+
+    .hot-cat-box p {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        color: #fff;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
+    }
+
+    .box-left {
+        width: 49.5%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    .hot-box .content-box .hot-cat-box .box-left>.title-ctr {
+        background-image: url('../../../img/beautiful-korea.jpg');
+        background-size: cover;
+        background-position: center;
+        transition: filter 1.2s, transform .8s;
+    }
+
+    .box-right {
+        width: 49.5%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .hot-cat-right-top,
+    .hot-cat-right-down {
+        width: 100%;
+        height: 50%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hot-cat-right-top {
+        border-radius: 0 10px 0 0;
+        overflow: hidden;
+    }
+
+
+    .hot-cat-right-down {
+        border-radius: 0 0 10px 10px;
+        overflow: hidden;
+    }
+
+    .hotcat-rd-r,
+    .hotcat-rd-l {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .hotcat-rd-r {
+        border-radius: 0 0 0 10px;
+    }
+
+
+
+    .news-title {
+        width: 95%;
+        height: 90%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .news-title>h3 {
+        width: 100%;
+        height: 40px;
+        color: rgb(104, 104, 104);
+        position: absolute;
+        top: 0;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        font-size: 1.6rem;
+        padding-left: unset;
+    }
+
+    .news-item .news-title>p {
+        width: 100%;
+        position: absolute;
+        bottom: .5vw;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        color: #aaa;
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .box-left .title-ctr>p,
+    .hot-cat-right-down .title-ctr>p,
+    .hot-cat-right-top .title-ctr>p {
+        color: #fff;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+
+    }
+
+    .box-discription {
+        width: 100%;
+        height: 80%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0));
+        z-index: -1;
+        transform: translateY(-80%);
+    }
+
+    .box-discription>p {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        width: 95%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        z-index: 99;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        width: 80%;
+    }
+
+    .bottom-bottom {
+        position: absolute;
+        bottom: 0;
+    }
+
+
+    .bottom-left {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+    }
+
+    .title-ctr {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        padding: 10px 10px;
+    }
+
+    .hot-box .content-box .hot-cat-box .box-left>.title-ctr,
+    .box-right .hot-cat-right-top>.title-ctr,
+    .box-right .hot-cat-right-down .hotcat-rd-r>.title-ctr,
+    .box-right .hot-cat-right-down .hotcat-rd-l>.title-ctr {
+        filter: grayscale(0.6);
+        overflow: hidden;
+    }
+
+    .hot-box .content-box .hot-cat-box .box-left>.title-ctr:hover,
+    .box-right .hot-cat-right-top>.title-ctr:hover,
+    .box-right .hot-cat-right-down .hotcat-rd-r>.title-ctr:hover,
+    .box-right .hot-cat-right-down .hotcat-rd-l>.title-ctr:hover {
+        cursor: pointer;
+        filter: grayscale(0);
+        transform: scale(1.2);
+        overflow: hidden;
+    }
+
+    .box-right .hot-cat-right-top>.title-ctr {
+        background-image: url('../../../img/japanese-food.jpg');
+        background-size: cover;
+        background-position: center;
+        transition: filter 1.2s, transform .8s;
+    }
+
+    .box-right .hot-cat-right-down .hotcat-rd-r>.title-ctr {
+        background-image: url('../../../img/japan-tokyo.jpg');
+        background-size: cover;
+        background-position: center;
+        transition: filter 1.2s, transform .8s;
+    }
+
+    .box-right .hot-cat-right-down .hotcat-rd-l>.title-ctr {
+        background-image: url('../../../img/japan-west-north.jpg');
+        background-size: cover;
+        background-position: center;
+        transition: filter 1.2s, transform .8s;
+    }
+
+    .allinone-box .title-ctr {
+        padding: 0;
+    }
+
+    .allinone-box {
+        width: 100%;
+        height: 80vh;
+        position: relative;
+        min-height: 687px;
+    }
+
+    /* text */
+    .text-center {
+        text-align: center;
+    }
+}

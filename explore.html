@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>探索行程 | &on | 旅遊規劃、分享</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/explore.css">
+    <!-- I miss you -->
+    <link rel="shortcut icon" type="image/gif" href="plugin/I-Miss-You-master/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="plugin/I-Miss-You-master/jquery.iMissYou.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="header" class="header_index">
+            <div class="contents flex">
+                <h1>
+                    <a href="./index.html">
+                        <img src="./img/andOn-Logo.svg" alt="">
+                    </a>
+                </h1>
+                <nav>
+                    <ul class="flex">
+                        <li> <a href="./myjourney.html">行程管理</a> </li>
+                        <li> <a href="./explore.html">探索行程</a> </li>
+                        <li> <a href="#">會員中心</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="m_formSelect_btn" class="m_formSelect">
+            <h3>新增行程</h3>
+        </div>
+        <div id="dropdown_form" class="top-form">
+            <form action="./my-plan-dashboard.html" method="GET">
+                <div for="month" class="date-select">
+                    <input type="date" class="date-1st" placeholder="2019/9/28">
+                    <input type="date" class="date-2nd" placeholder="2019/9/28">
+                </div>
+                <select id="country" name="country" class="form_control">
+                </select>
+                <input type="text" placeholder="請輸入行程名稱" class="input-text">
+                <a type="button" class="submit" value="建立行程">建立行程</a>
+            </form>
+
+        </div>
+    </header>
+
+    <main>
+         <!-- mobile Navbar -->
+         <div id="navbar" class="navbar">
+                <div class="contents flex">
+                    <a id="moreBtn">
+                        <span id="more_nav_box" class="more_nav_box">
+                            <!-- <img src="./img/icons/nav-icon-more.svg" alt=""> -->
+                            <button class="more_nav">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <!-- <p>選項</p> -->
+                        </span>
+                    </a>
+                    <a href="./my-plan-dashboard.html" id="planDashboard">
+                        <span>
+                            <img src="./img/icons/nav-icon-plan.svg" alt="">
+                            <!-- <p>規劃</p> -->
+                        </span>
+                    </a>
+                    <a href="./explore.html" id="explore">
+                        <span>
+                            <img src="./img/icons/nav-icon-explore.svg" alt="">
+                            <!-- <p>探索</p> -->
+                        </span>
+                    </a>
+                </div>
+            </div>
+        <div id="navbar_ctn" class="navbar_ctn">
+                <div id="white_space"></div>
+                <h3 class="navbar_title">更多選項</h3>
+                <ul class="navbar_menu">
+                    <li> <a href="./index.html">首頁</a> </li>
+                    <li> <a href="./my-plan-dashboard.html">安排行程</a> </li>
+                    <li> <a href="./explore.html"> 探索行程</a></li>
+                    <li> <a href="./myjourney.html">行程管理</a> </li>
+                    <li> <a href="./myjourney.html">收藏最愛</a> </li>
+                    <li> <a href="#">會員中心</a> </li>
+                    <li> <a href="#">關於&on</a> </li>
+                </ul>
+            </div>
+            <!-- mobile Navbar END -->
+        <section>
+            <div class="explore-head">
+                <div class="explore-head-box">
+                    <h2>探索行程</h2>
+                    <div class="explore-headText">
+                        <h4>選擇分類，快速找到有興趣的內容!</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+                <div class="explore-box">
+                    <div class="right-box">
+                        <a href="explore-catelory.html">
+                            <div class="jpkrn-box">
+                                <article>
+                                    <h3>日韓旅遊最前線</h3>
+                                </article>
+                            </div>
+                        </a>
+                        <div class="right-box-down">
+                            <a href="explore-catelory.html">
+                                <div class="best-bloger-box">
+                                    <article>
+                                        <h3>最強部落客帶你玩</h3>
+                                        <p>聽達人的就對了！十大旅遊部落客帶你吃喝玩樂！<br>旅行就是生活中的一部分呀，跟著他們收拾好行囊出發吧！</p>
+                                    </article>
+                                </div>
+                            </a>
+                            <a href="explore-catelory.html">
+                                <div class="movie-box">
+                                    <article>
+                                        <h3>影視巡遊</h3>
+                                    </article>
+                                    <!-- <p>你是電影迷嗎？看電影時經常希望自己也能像影片中的主角一樣，來場大冒險或是異國邂逅，或是瘋狂的大鬧一場。</p> -->
+                                    <span></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="left-box">
+                        <a href="explore-catelory.html">
+                            <div class="disney-box">
+                                <div class="disney-box-contant">
+                                    <h3>全球樂園歡樂無限</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="pag-btm-center">
+                    <ul class="pagination">
+                        <li><a href="#">«</a></li>
+                        <li><a class="active" href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">»</a></li>
+                    </ul>
+                </div>
+            </section>
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <div class="viewport">
+                <div class="footer-s1">
+                    <a href="./index.html" class="logo"></a>
+                </div>
+                <div class="footer-content">
+                    <ul>
+                        <li><a href="./explore.html"">探索行程</a></li>
+                        <li><a href=" ./myjourney.html">行程管理 </a> </li> <li> <a href="#">會員中心</a> </li>
+                        <li> <a href="#">關於&on</a> </li>
+                        <li> <a href="#">常見問題</a> </li>
+                        <li> <a href="#">聯絡我們</a> </li>
+                        <li> <a href="#">隱私政策</a> </li>
+                        <li> <a href="#">友站連結</a> </li>
+                    </ul>
+                    <div class="footer-emailbox">
+                        <p>立即取得最新旅遊消息</p>
+                        <form class="email-all">
+                            <input type="email" placeholder="email" class="email-input">
+                            <input type="submit" class="email-submit" value="OK">
+                        </form>
+                    </div>
+                </div>
+                <div class="social-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="rhan">
+                    <p>rhan0</p>
+                    <p>+886-0912345678</p>
+                    <p>rhan0@gmail.com</p>
+                </div>
+                <div class="copyReight">Copyright &copy; rhan0 all rights reserved</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- I miss you -->
+    <script type="text/javascript" src="plugin/I-Miss-You-master/miss-you.js"></script>
+    <script type="text/javascript" src="./js/fixedHeaderToTop.js"></script>
+    <script type="text/javascript" src="./js/country_select.js"></script>
+    <script type="text/javascript" src="./js/show_menu.js"></script>
+    <script>
+            window.onscroll = function () {
+                // scrollTop() //fixedHeaderToTop.js
+            };
+            showSelectFrom();
+            hambgrMenu(); //show_menu.js
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,420 @@
+.callaction {
+    margin: 40px 0 0 0;
+    position: relative;
+    display: block;
+}
+
+.callaction_wrapper {
+    height: 100vw;
+    background-image: url('../../img/callaction-bg.jpg');
+    background-size: cover;
+    background-position: 0 90%;
+    padding: 15vw 0 15vw 0;
+}
+
+
+.callaction_wrapper h2 {
+    margin-bottom: 7.5vw;
+    text-align: center;
+}
+
+
+.callaction_wrapper form {
+    /* border: 1px solid green; */
+    /* background-color: #EC7D69; */
+    width: 70%;
+    height: 30%;
+    margin: 3% auto;
+    /* display: flex; */
+    /* justify-content: center; */
+    font-size: 0;
+    position: relative;
+}
+
+.callaction_wrapper .date_select,
+.callaction_wrapper .country_select,
+.callaction_wrapper .action_btn_box {
+    border: 1px solid #EDEBD9;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    border-radius: .3rem;
+    display: flex;
+    flex-direction: column;
+    margin: 3vw 0;
+}
+.callaction_wrapper .action_btn_box{
+    background-color:#EC7D69;
+}
+
+.callaction_wrapper .country_select div {
+    height: 100%;
+    padding: 0 25%;
+}
+
+.callaction_wrapper .date_1st,
+.callaction_wrapper .date_2nd,
+.callaction_wrapper .callaction_btn,
+.callaction_wrapper .form_control {
+    background-color: transparent;
+    color: #EDEBD9;
+}
+
+.callaction_wrapper .date_1st,
+.callaction_wrapper .date_2nd,
+.callaction_wrapper .callaction_btn,
+.callaction_wrapper .form_control:hover {
+    cursor: pointer;
+}
+
+.callaction_wrapper .date_1st,
+.callaction_wrapper .date_2nd,
+.callaction_wrapper .form_control,
+.callaction_wrapper .callaction_btn {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    text-align: center;
+}
+
+.date_select .caret,
+.country_select .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed #fff;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+}
+
+
+.callaction_wrapper .callaction_btn:hover {
+    background-color: #EDEBD9;
+    color: #EC7D69;
+    border-radius:.3rem;
+}
+
+.callaction_down{
+    height: 100%;
+}
+
+select {
+    appearance: none;
+}
+
+@media screen and (min-width:767px) and (max-width: 1199px) {
+    .callaction {
+        margin-top: 10vw;
+        height: 100%;
+        
+    }
+    .callaction_wrapper {
+        background-attachment: fixed;
+        height: 100vh;
+        padding: 5%;
+        min-height: 690px;
+    }
+
+    .callaction_wrapper h2 {
+        margin: 0;
+        text-align: center;
+        padding-top: 10%;
+    }
+
+
+    .callaction_wrapper form {
+        /* border: 1px solid green; */
+        /* background-color: #EC7D69; */
+        width: 60%;
+        height: auto;
+        margin: 5vw auto;
+        /* display: flex; */
+        /* justify-content: center; */
+        font-size: 0;
+        position: relative;
+    }
+
+    .callaction_wrapper .date_select {
+        border: 1px solid #EDEBD9;
+        width: 50%;
+        height: 8vw;
+        position: relative;
+        border-radius: .3rem;
+        margin: 0;
+        display: inline-block;
+    }
+
+    .callaction_wrapper .date_select:nth-child(1) {
+        border-radius: 0.3rem 0 0 0.3rem;
+        border-right: transparent;
+    }
+
+    .callaction_wrapper .date_select:nth-child(2) {
+        border-radius: 0 0.3rem 0.3rem 0;
+        border-left: transparent;
+    }
+
+    .callaction_wrapper .date_1st,
+    .callaction_wrapper .date_2nd,
+    .callaction_wrapper .callaction_btn {
+        background-color: transparent;
+        color: #EDEBD9;
+    }
+
+    .callaction_wrapper .date_1st,
+    .callaction_wrapper .date_2nd,
+    .callaction_wrapper .callaction_btn,
+    .callaction_wrapper .form_control:hover {
+        cursor: pointer;
+    }
+
+    .callaction_wrapper .date_1st {
+        font-size: 1.3rem;
+        width: 100%;
+        height: 100%;
+        border: 1px solid transparent;
+        border-right: transparent;
+        /* border-radius:.3rem; */
+        position: absolute;
+        /* position: relative; */
+    }
+
+    .callaction_wrapper .date_2nd {
+        font-size: 1.3rem;
+        width: 100%;
+        height: 100%;
+        border: 1px solid transparent;
+        border-left: transparent;
+        /* border-radius:.3rem; */
+        position: absolute;
+        right: 0;
+        /* position: relative; */
+        overflow: visible;
+    }
+
+    .callaction_wrapper .date_2nd::before {
+        content: '';
+        width:1px;
+        height: 85%;
+        background-color: #EDEBD9;
+        position: absolute;
+        left: -1px;
+        z-index: 99999999;
+    }
+
+
+    
+    .callaction_wrapper .country_select div {
+        height: 8vw;
+        padding: 0;
+        padding: 2vw 0;
+    }
+    .callaction_wrapper .form_control {
+        font-size: 1rem;
+        width: 100%;
+        /* height: 5vw; */
+        /* border: 1px solid #EDEBD9; */
+        background-color: transparent;
+        color: #EDEBD9;
+        /* margin-top: .8rem; */
+        /* appearance: none; */
+    }
+    .callaction_wrapper .country_select .form_control>option{
+        font-size: 2rem;
+    }
+
+    .callaction_wrapper .country_select {
+        border: 1px solid #EDEBD9;
+        width: 65%;
+        height: auto;
+        position: relative;
+        border-radius: .3rem;
+        margin: 2vw 0;
+        display: inline-block;
+    }
+    .callaction_wrapper .action_btn_box {
+        width: 30%;
+        margin: 2vw 0;
+        margin-left: 5%;
+        height: auto;
+        display: inline-block;
+        background-color: #EDEBD9;
+        border: none;
+    }
+    
+    .callaction_wrapper .callaction_btn {
+        font-size: 1.2rem;
+        width: 100%;
+        height: 8vw;
+        /* position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%); */
+       padding: 0 20px;
+        color: #333;
+        border-color: transparent;
+    }
+    .callaction_down{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .callaction {
+        margin-top: 10vw;
+        /* height: 100%; */
+       
+    }
+    .callaction_wrapper {
+        background-attachment: fixed;
+        height: 100vh;
+        padding: 5%;
+        min-height: 690px;
+    }
+
+    .callaction_wrapper h2 {
+        margin: 0;
+        text-align: center;
+        padding-top: 10%;
+    }
+
+
+    .callaction_wrapper form {
+        /* border: 1px solid green; */
+        /* background-color: #EC7D69; */
+        width: 40%;
+        height: auto;
+        margin: 5vw auto;
+        /* display: flex; */
+        /* justify-content: center; */
+        font-size: 0;
+        position: relative;
+    }
+
+    .callaction_wrapper .date_select {
+        border: 1px solid #EDEBD9;
+        width: 50%;
+        height: 5vw;
+        position: relative;
+        border-radius: .3rem;
+        margin: 0;
+        display: inline-block;
+    }
+
+    .callaction_wrapper .date_select:nth-child(1) {
+        border-radius: 0.3rem 0 0 0.3rem;
+        border-right: transparent;
+    }
+
+    .callaction_wrapper .date_select:nth-child(2) {
+        border-radius: 0 0.3rem 0.3rem 0;
+        border-left: transparent;
+    }
+
+    .callaction_wrapper .date_1st,
+    .callaction_wrapper .date_2nd,
+    .callaction_wrapper .callaction_btn {
+        background-color: transparent;
+        color: #EDEBD9;
+    }
+
+    .callaction_wrapper .date_1st,
+    .callaction_wrapper .date_2nd,
+    .callaction_wrapper .callaction_btn,
+    .callaction_wrapper .form_control:hover {
+        cursor: pointer;
+    }
+
+    .callaction_wrapper .date_1st {
+        font-size: 1.3rem;
+        width: 100%;
+        height: 100%;
+        border: 1px solid transparent;
+        border-right: transparent;
+        /* border-radius:.3rem; */
+        position: absolute;
+        /* position: relative; */
+    }
+
+    .callaction_wrapper .date_2nd {
+        font-size: 1.3rem;
+        width: 100%;
+        height: 100%;
+        border: 1px solid transparent;
+        border-left: transparent;
+        /* border-radius:.3rem; */
+        position: absolute;
+        right: 0;
+        /* position: relative; */
+        overflow: visible;
+    }
+
+    .callaction_wrapper .date_2nd::before {
+        content: '';
+        width:1px;
+        height: 85%;
+        background-color: #EDEBD9;
+        position: absolute;
+        left: -1px;
+        z-index: 99999999;
+    }
+
+
+    
+    .callaction_wrapper .country_select div {
+        height: 100%;
+        padding: 0;
+    }
+    .callaction_wrapper .form_control {
+        font-size: 1rem;
+        width: 100%;
+        height: 5vw;
+        /* border: 1px solid #EDEBD9; */
+        background-color: transparent;
+        color: #EDEBD9;
+        /* margin-top: .8rem; */
+        /* appearance: none; */
+    }
+    .callaction_wrapper .country_select .form_control>option{
+        font-size: 2rem;
+    }
+
+    .callaction_wrapper .country_select {
+        border: 1px solid #EDEBD9;
+        width: 65%;
+        height: 5vw;
+        position: relative;
+        border-radius: .3rem;
+        margin: 2vw 0;
+        display: inline-block;
+    }
+    .callaction_wrapper .action_btn_box {
+        width: 30%;
+        margin: 0;
+        margin-left: 5%;
+        height: 5vw;
+        display: inline-block;
+        background-color: #EDEBD9;
+        border: none;
+    }
+    
+    .callaction_wrapper .callaction_btn {
+        font-size: 1.2rem;
+        width: 100%;
+        height: 5vw;
+        /* position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%); */
+       padding: 0 20px;
+        color: #333;
+        border-color: transparent;
+    }
+}

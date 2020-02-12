@@ -1,0 +1,90 @@
+.intro_page {
+    position: relative;
+    margin: 40px 0 0 0;
+}
+
+.intro_wrapper {
+    width: 100%;
+    height: 70%;
+    background-image: url('../../img/andon-main-image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.statement_box {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5% 0 5% 0;
+}
+
+.statement_box h2 {
+    /* font-size: 2rem; */
+    padding: 7% 0 4% 0;
+}
+
+.statement_box p {
+    /* font-size: 1rem; */
+    padding: 4% 0 7% 0;
+    line-height: 1.5;
+}
+
+@media screen and (min-width:767px) and (max-width: 1199px) {
+    .intro_page {
+        min-height: 700px;
+        margin: 0;
+    }
+
+    .intro_wrapper {
+        height: 100%;
+        background-attachment: fixed;
+    }
+
+    .statement_box {
+        width: 100%;
+        padding: 10% 0 10% 0;
+        text-align: center;
+    }
+
+    .statement_box h2 {
+        /* font-size: 4rem; */
+        padding: 10% 0 3% 0;
+    }
+
+    .statement_box p {
+        /* font-size: 1.5rem; */
+        padding: 3% 0 10% 0;
+        line-height: 1.8;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .intro_page {
+        min-height: 700px;
+        margin: 0;
+    }
+
+    .intro_wrapper {
+        height: 100%;
+        background-attachment: fixed;
+    }
+
+    .statement_box {
+        width: 100%;
+        padding: 10% 0 10% 0;
+        text-align: center;
+    }
+
+    .statement_box h2 {
+        /* font-size: 4rem; */
+        padding: 10% 0 3% 0;
+    }
+
+    .statement_box p {
+        /* font-size: 1.5rem; */
+        padding: 3% 0 10% 0;
+        line-height: 1.8;
+    }
+}

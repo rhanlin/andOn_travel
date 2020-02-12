@@ -1,0 +1,732 @@
+.explore-box {
+    width: auto;
+    max-width: 375px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.left-box {
+    width: 100%;
+    height: auto;
+    position: relative;
+    min-height: 1297px;
+    padding: 0;
+}
+
+.right-box {
+    width: 100%;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    margin: 20px 0;
+    position: relative;
+    background-color: #fff;
+}
+
+
+.travel-img {
+    width: 100%;
+    height: 80%;
+    background-color: pink;
+    background-image: url('../../../img/blog-oiran-4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-discription {
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid #aaa; */
+}
+
+.img-discription>p {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6rem;
+}
+
+.blog-content>p {
+    width: 100%;
+    font-size: 1rem;
+    display: inline-block;
+    line-height: 1.5rem;
+    color: #777;
+    font-weight: 100;
+    padding: 20px;
+    text-align: justify;
+    /* border: 1px solid greenyellow; */
+}
+
+.lf-detal-info-box .journey-blog>h3 {
+    /* border: 1px solid coral; */
+    font-weight: bold;
+    color: #211F20;
+    margin-bottom: 20px;
+}
+
+
+.blog-contant-img>span {
+    display: inline-block;
+    width: 100%;
+    height: 60vw;
+    margin: 20px 0;
+    background-color: gray;
+}
+
+.blog-contant-img>span:nth-child(1) {
+    background-image: url('../../../img/blog-img.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-contant-img>span:nth-child(2) {
+    background-image: url('../../../img/sakura.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-content .pic-line2 {
+    display: inline-block;
+    width: 100%;
+    height: 60vw;
+    margin: 20px 0;
+    background-color: gray;
+    background-image: url('../../../img/blog-oiran-5.jpg');
+    background-size: cover;
+    background-position: center 76%;
+}
+
+.explore-box .right-box .schedule-right {
+    width: 100%;
+}
+
+
+.btn-box>a {
+    padding: 15px 10px;
+    height: 100%;
+    width: 48%;
+    text-align: center;
+    display: inline-block;
+    color: #E5785E;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.btn-box>a:nth-child(2) {
+    /* background-color: #50a3a2; */
+    border: 1px solid #E5785E;
+}
+
+.btn-box>a:nth-child(1) {
+    /* background-color: #50a3a2; */
+    border: 1px solid #E5785E;
+}
+
+
+.btn-box>a:nth-child(2):hover {
+    border: 1px solid #E5785E;
+    /* background-color: transparent; */
+    background-color: #E5785E;
+    color: #fff;
+}
+
+.btn-box>a:nth-child(1):hover {
+    border: 1px solid #E5785E;
+    /* background-color: transparent; */
+    background-color: #E5785E;
+    color: #fff;
+}
+
+.schedule-img .img-box>span:hover {
+    cursor: pointer;
+    border: 1px solid rgb(228, 228, 228);
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.05));
+
+}
+
+/* 滾軸外觀 */
+.journey-blog::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+    border-radius: 10px;
+    /* background-color: #F5F5F5; */
+    background: linear-gradient(-45deg, #23d5ab00, #2183a791, #2183a791, #23d5ab00);
+}
+
+.journey-blog::-webkit-scrollbar {
+    width: 10px;
+    /* height: 5px; */
+}
+
+.journey-blog::-webkit-scrollbar-thumb {
+    border-radius: 999em;
+    /* background: linear-gradient(-45deg, #aaa, #23AAD1); */
+    background: linear-gradient(-45deg, #F3986F, #F79E20, #F79E20, #F3986F);
+}
+
+
+.hidden {
+    opacity: 0;
+}
+
+.explore-box .right-box .schedule-right-top {
+    height: auto;
+    margin-top: 20px 0;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+.schedule-btn {
+    width: 100%;
+    height: auto;
+}
+
+.btn-box {
+    margin: 20px 0px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.schedule-img {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.schedule-title {
+    text-align: center;
+    padding: 4vw 0;
+}
+
+.blog-contant-img {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    position: relative !important;
+    bottom: 0 !important;
+    transform: none !important;
+    left: unset !important;
+}
+
+.schedule-img .img-box>span {
+    display: inline-block;
+    margin: 10px 0;
+    width: 100%;
+    height: 70vw;
+    background-color: #999;
+    background-size: cover;
+    background-position: center;
+}
+
+.lf-head-pic-box {
+    width: 100%;
+    height: 100%;
+    max-height: unset;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.travel-img {
+    width: 100%;
+    height: 50vw;
+}
+
+.img-discription {
+    width: 100%;
+    height: auto;
+}
+
+.img-discription>p {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.2rem;
+    text-align: justify;
+    padding: 3vw 3vw;
+}
+
+.lf-detal-info-box {
+    width: 100%;
+    display: block;
+    height: auto;
+    max-height: none;
+    position: relative;
+    background-color: #fff;
+}
+
+.journey-blog {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    position: unset !important;
+    top: unset !important;
+    left: unset !important;
+    transform: unset !important;
+}
+
+.journey-blog h4 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.journey-blog .blog-content {
+    width: 100%;
+    margin: 0;
+    border-radius: 10px;
+    padding: 0;
+}
+
+@media screen and (min-width:376px) and (max-width: 766px) {
+    .explore-box {
+        width: auto;
+        max-width: unset;
+        /* border: 1px solid cornflowerblue; */
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* flex-wrap: wrap; */
+        /* background-color: #fff; */
+        /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08); */
+        /* border-radius: 10px; */
+        margin-bottom: 2rem;
+        padding: 20px 0;
+    }
+
+    .left-box {
+        width: 100%;
+        height: auto;
+        /* border: 1px solid red; */
+        /* height: 70vh; */
+        position: relative;
+        min-height: 1297px;
+        padding: 0;
+    }
+
+    .explore-box .right-box .schedule-right-top {
+        height: auto;
+        margin-top: 20px 0;
+        width: 100%;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        background-color: #fff;
+        border: 1px solid rgb(228, 228, 228);
+    }
+
+    .schedule-btn {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-box {
+        margin: 20px 0px;
+        padding: 20px 10px;
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08);
+        display: inline-block;
+        z-index: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border: 1px solid rgb(228, 228, 228);
+    }
+
+    .schedule-img {
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+    }
+
+    .schedule-title {
+        text-align: center;
+        padding: 4vw 0;
+    }
+
+    .img-box {
+        width: 90%;
+        margin: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: center;
+        flex-direction: column;
+        position: relative !important;
+        bottom: 0 !important;
+        transform: none !important;
+        left: unset !important;
+    }
+
+    .schedule-img .img-box>span {
+        display: inline-block;
+        margin: 10px 0;
+        width: 100%;
+        height: 70vw;
+        background-color: #999;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .lf-head-pic-box {
+        width: 100%;
+        height: 100%;
+        max-height: unset;
+        /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08); */
+        /* border: 1px solid green; */
+        /* border: 1px solid rgb(228, 228, 228); */
+        /* border-radius: 10px; */
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .travel-img {
+        width: 100%;
+        height: 50vw;
+    }
+
+    .img-discription {
+        width: 100%;
+        height: auto;
+    }
+
+    .blog-content>p {
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width: 1199px) {
+    .blog-contant-img>span{
+        border-right: 5px solid #fff;
+        border-left: 5px solid #fff;
+    }
+    .explore-box {
+        width: auto;
+        max-width: 1199px;
+        /* border: 1px solid cornflowerblue; */
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* flex-wrap: wrap; */
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        padding: 20px 2vw;
+    }
+
+    .left-box {
+        width: 100%;
+        height: auto;
+        /* border: 1px solid red; */
+        /* height: 70vh; */
+        position: relative;
+        min-height: 1297px;
+        padding: 0;
+    }
+
+    .right-box {
+        width: 100%;
+        height: auto;
+        /* box-shadow: unset; */
+        /* border: unset; */
+        /* background-color: unset; */
+        right: 0;
+        bottom: 0;
+        margin: 2vw 0;
+        position: relative;
+        padding: 2vw;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        border: 1px solid rgb(228, 228, 228);
+        background-color: #fff;
+    }
+
+    .explore-box .right-box .schedule-right-top {
+        height: 60vw;
+        position: relative;
+        width: 50%;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        background-color: #fff;
+        border: 1px solid rgb(228, 228, 228);
+        min-height: 681px;
+    }
+
+    .schedule-btn {
+        width: 50%;
+        height: auto;
+    }
+
+    .btn-box {
+        margin: 20px 0px;
+        padding: 20px 10px;
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08);
+        display: inline-block;
+        z-index: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border: 1px solid rgb(228, 228, 228);
+    }
+
+    .schedule-img {
+        position: absolute;
+        width: 50%;
+        height: 60vw;
+        bottom: unset;
+        top: 0;
+        right: 0;
+    }
+
+    .schedule-title {
+        text-align: center;
+        padding: 4vw 0;
+    }
+
+    .blog-contant-img {
+        width: 100%;
+        height: 350px;
+        /* border: 1px solid red; */
+        margin: 20px 0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .img-box {
+        width: 90%;
+        height: 110%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0;
+        align-content: center;
+        flex-direction: column;
+        position: relative !important;
+        bottom: 0 !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+
+    .schedule-img .img-box>span {
+        display: inline-block;
+        margin: 5px 5px;
+        width: 50%;
+        height: 18%;
+        background-color: #999;
+        /* border: 1px solid gold; */
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .lf-head-pic-box {
+        width: 100%;
+        height: 100%;
+        max-height: unset;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08);
+        /* border: 1px solid green; */
+        border: 1px solid rgb(228, 228, 228);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .travel-img {
+        width: 100%;
+        height: 50vw;
+    }
+
+    .img-discription {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-discription>p {
+        display: inline-block;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        color: #333;
+        line-height: 1.6rem;
+        padding: 3vw 1vw;
+    }
+
+    .lf-detal-info-box {
+        width: 100%;
+        display: block;
+        height: 1300px;
+        max-height: none;
+        /* position: absolute; */
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08);
+        /* border: 1px solid green; */
+        border: 1px solid rgb(228, 228, 228);
+        border-radius: 10px;
+    }
+
+    .journey-blog {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        /* border: 1px solid #aaa; */
+        /* border-radius: 10px; */
+        overflow: auto;
+        /* overflow: auto; */
+        padding: 20px;
+    }
+
+    .journey-blog .blog-content {
+        width: 95%;
+        margin: 0 auto;
+        /* border: 1px solid #aaa; */
+        border-radius: 10px;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .explore-box .right-box .schedule-right-top {
+        height: auto;
+        position: relative;
+    }
+    .img-box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        flex-direction: unset;
+        position: relative !important;
+        bottom: 0 !important;
+        transform: none !important;
+        left: unset !important;
+    }
+    .schedule-img .img-box>span {
+        display: inline-block;
+        margin: 10px;
+        width: 120px;
+        height: 120px;
+        background-color: #999;
+        background-size: cover;
+        background-position: center;
+    }
+    .schedule-title {
+        display: none;
+    }
+
+    .explore-box {
+        width: auto;
+        max-width: 1200px;
+        /* border: 1px solid cornflowerblue; */
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        padding: 20px 1vw;
+    }
+
+    .left-box {
+        width: 60%;
+        /* border: 1px solid red; */
+        /* height: 70vh; */
+        position: relative;
+    }
+
+    .right-box {
+        width: 40%;
+        height: auto;
+        /* border: 1px solid blue; */
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08);
+        /* border: 1px solid green; */
+        border: 1px solid rgb(228, 228, 228);
+        background-color: #fff;
+        /* height: 70vh; */
+        position: relative;
+        margin: 0;
+        margin-left: 1vw;
+    }
+
+    .lf-head-pic-box {
+        width: 100%;
+        height: auto;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08);
+        /* border: 1px solid green; */
+        border: 1px solid rgb(228, 228, 228);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .journey-blog {
+        overflow: auto;
+    }
+    .journey-blog .blog-content {
+        width: 100%;
+        margin: 0;
+        height: 700px;
+        border-radius: 10px;
+        padding: 0;
+    }
+    .travel-img{
+        height: 400px;
+    }
+    .blog-contant-img>span{
+        display: inline-block;
+        width: 50%;
+        height: 20vw;
+        margin: 20px 0;
+        background-color: gray;
+        border: 1vw solid #fff;
+    }
+    .blog-content .pic-line2 {
+        display: inline-block;
+        width: 100%;
+        height: 20vw;
+        margin: 20px 0;
+        background-color: gray;
+        border: 1vw solid #fff;
+    }
+}

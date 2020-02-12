@@ -1,0 +1,55 @@
+/* @import "reset/normalize.css"; */
+@import "./common/reset.css";
+@import "./common/top-header.css";
+@import "./common/top-create-form.css";
+@import "./explore/explore-box.css";
+@import "./explore/explore-box-content.css";
+@import "./common/pag-btm.css";
+@import "./common/navbar.css";
+@import "./common/footer.css";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+}
+
+.top-navbar ul>li:nth-child(2)>a{
+    color: rgba(243, 152, 111, 1);
+}
+
+
+.navbar{
+    display: block;
+    animation: showNavbar 1s;
+}
+
+@media screen and (min-width: 1200px){
+    .navbar{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:767px) and (max-width: 1199px) {
+    .navbar{
+        display: none;
+    }
+}
+
+@keyframes showNavbar{
+    0% {
+        transform: translate(-50%,100%);
+    }
+    100% {
+        transform: translate(-50%,0%);
+    }
+}

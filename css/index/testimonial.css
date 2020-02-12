@@ -1,0 +1,101 @@
+.testimonial{
+    margin: 40px 0 0 0;
+    padding: 20px 0 20px 0;
+    /* position: relative; */
+    display: block;
+    /* height: 120vw; */
+    background-image: url('../../img/map-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.testimonial .testimonial_box{
+    /* width: 70%; */
+    /* height: 85%; */
+    text-align: center;
+    padding: 40px;
+    margin: 20px 20px 20px 20px;
+    background-color: #EDEBD9;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    border-radius: 10px;
+}
+.testimonial .testimonial_box h2{
+    padding: 7% 0 4% 0;
+}
+.testimonial .testimonial_box .text{
+    display: none;
+}
+.testimonial .testimonial_box .m_text{
+    display: block;
+}
+.testimonial .testimonial_box p{
+    padding: 7% 0 4% 0;
+    line-height: 1.5;
+}
+
+@media screen and (min-width:767px) and (max-width: 1199px){
+    .testimonial .testimonial_box .text{
+        display: block;
+        min-width: 60vw;
+        max-width: 60vw;
+    }
+    .testimonial .testimonial_box .m_text{
+        display: none;
+    }
+    .testimonial{
+        height: auto;
+        padding: 75px 5%;
+    }
+    .testimonial .testimonial_box {
+        width: 60%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .testimonial .testimonial_box h2{
+        position: relative;
+        left: -12vw;
+        text-align: left;
+        line-height: 5rem;
+    }
+    .testimonial .testimonial_box p{
+        line-height: 1.8;
+        padding: 0% 0 4% 0;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .testimonial .testimonial_box .text{
+        display: block;
+        min-width: 30vw;
+        max-width: 40vw;
+    }
+    .testimonial .testimonial_box .m_text{
+        display: none;
+    }
+    .testimonial{
+        height: auto;
+        padding: 75px 5%;
+        margin-top: 10vw;
+    }
+    .testimonial .testimonial_box {
+        width: 60%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .testimonial .testimonial_box h2{
+        position: relative;
+        left: -9.3vw;
+        text-align: left;
+        line-height: 5rem;
+    }
+    .testimonial .testimonial_box p{
+        line-height: 1.8;
+        padding: 4% 0 4% 0;
+        text-align: left;
+    }
+}

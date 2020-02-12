@@ -1,0 +1,16 @@
+@import "./common/reset.css";
+@import "./common/header.css";
+@import "./common/navbar.css";
+@import "./index/top_page.css";
+@import "./index/intro_page.css";
+@import "./index/feature_page.css";
+@import "./index/detal_page.css";
+@import "./index/hotjourney_page.css";
+@import "./index/testimonial.css";
+@import "./index/callaction.css";
+@import "./index/white_space.css";
+@import "./common/footer.css";
+
+
+
+

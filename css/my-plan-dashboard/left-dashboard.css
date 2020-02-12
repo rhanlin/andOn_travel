@@ -1,0 +1,762 @@
+.dashbod-left {
+    /* border: 1px solid green; */
+    width: 68%;
+    height: auto;
+    background-color: #F0F0F0;
+    margin-top: 65.86px;
+    position: relative;
+}
+
+/* 旅行基本資訊區塊 */
+.dashbod-left .dashbod-left-top {
+    /* border: 1px solid rgb(0, 0, 177); */
+    width: 100%;
+    height: auto;
+    padding:20px 0;
+    position: relative;
+}
+
+.dashbod-left .dashbod-left-top .dashbo-info {
+    width: 100%;
+    height: auto;
+    /* padding: 1vw 0; */
+}
+
+.dashbod-left .dashbod-left-top .dashbo-info .dashbo-info-title,
+.dashbod-left .dashbod-left-top .dashbo-info .dashbo-info-detal {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* 行程名稱 */
+/* 行程時間 */
+/* 行程國家 */
+.dashbod-left .dashbod-left-top .dashbo-info .dashbo-info-title {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+}
+
+.dashbo-info-title .info-title-pdname,
+.dashbo-info-title .info-title-pddate,
+.dashbo-info-title .info-title-pdcountry {
+    width: 31.8%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid rgb(228, 228, 228);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s;
+    background-color: #fff;
+}
+
+
+.dashbo-info-title .info-title-pdname:hover,
+.dashbo-info-title .info-title-pddate:hover,
+.dashbo-info-title .info-title-pdcountry:hover {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.07), 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.dashbo-info-title .info-title-pdname:hover.info-title-pdname a label span,
+.dashbo-info-title .info-title-pddate:hover.info-title-pddate a label span,
+.dashbo-info-title .info-title-pdcountry:hover.info-title-pdcountry a label span {
+    background-color: rgba(243, 152, 111, 1);
+}
+
+.dashbo-info-title .info-title-pdname a,
+.dashbo-info-title .info-title-pddate a,
+.dashbo-info-title .info-title-pdcountry a {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    padding: 15% 5%;
+}
+
+/* 
+.info-title-pdname .info-box {
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 10px;
+} */
+
+.info-title-pdname .info-box,
+.info-title-pddate .info-box,
+.info-title-pdcountry .info-box {
+    width: 100%;
+    height: 150px;
+    color: #211F20;
+    /* position: relative; */
+    padding: 10px;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 10px;
+}
+
+.dashbo-info-title .info-title-pdname a label,
+.dashbo-info-title .info-title-pddate a label,
+.dashbo-info-title .info-title-pdcountry a label {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    /* border: 1px solid red; */
+    position: absolute;
+    right: 0;
+    top:0;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.info-title-pdname a label span,
+.info-title-pddate a label span,
+.info-title-pdcountry a label span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(228, 228, 228);
+
+}
+/* 
+.info-title-pddate .info-box,
+.info-title-pdcountry .info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+} */
+
+.info-title-pddate a .info-box .pddate-year,
+.info-title-pddate a .info-box .pddate-date {
+    width: 80%;
+    height: 40%;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 10px;
+    position: relative;
+    margin: 10px auto;
+}
+/* 
+.info-title-pddate a .info-box .pddate-year{
+    margin: 30px auto 10px auto;
+}
+
+.info-title-pddate a .info-box .pddate-date{
+    margin: 10px auto 30px auto;
+} */
+
+.info-title-pddate a .info-box .pddate-year,
+.info-title-pdcountry a .info-box .country-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.info-title-pddate a .info-box .pddate-date {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+.info-title-pddate a .info-box .pddate-year span,
+.info-title-pddate a .info-box .pddate-date span,
+.info-title-pdcountry a .info-box .country-name span,
+.info-title-pdcountry a .info-box .country-flag span {
+    display: inline-block;
+}
+
+.info-title-pddate a .info-box .pddate-year span,
+.info-title-pdcountry a .info-box .country-name span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.info-title-pdcountry a .info-box .country-flag span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    background-image: url('../../img/icons/country-flag/czech-republic.svg');
+    background-size: cover;
+}
+
+.info-title-pdname a .info-box div,
+.info-title-pddate a .info-box .pddate-date div{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    /* padding: 40px 0; */
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+.info-title-pdcountry a .info-box .country-flag div {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+.info-title-pdname a .info-box div h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: .1rem;
+}
+
+.info-title-pdcountry a .info-box .country-name,
+.info-title-pdcountry a .info-box .country-flag {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.country-name{
+    padding: 24px 0;
+    position: unset;
+    transform: unset;
+    height: auto;
+}
+.country-flag-c{
+    position: unset;
+    transform: unset;
+    padding: 5px 0;
+}
+
+
+
+/* 行程基本資訊 */
+/* 行程預算 */
+.dashbod-left .dashbod-left-top .dashbo-info .dashbo-info-detal {
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dashbo-info-detal .info-detal-std,
+.dashbo-info-detal .info-detal-budget {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(228, 228, 228);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08);
+    background-color: rgb(246, 246, 246);
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+}
+
+.dashbo-info-detal .info-detal-std{
+    margin-right: 15px;
+}
+
+.dashbo-info-detal .info-detal-std .detal-std-top,
+.dashbo-info-detal .info-detal-std .detal-std-down,
+.info-detal-budget .budget-title,
+.info-detal-budget .budget-down {
+    width: 100%;
+    /* border: 1px solid pink; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* 行程基本資訊 - 國家幾本資訊 && 備忘錄*/
+.dashbo-info-detal .info-detal-std .detal-std-top {
+    height: auto;
+    border-radius: 10px;
+    /* border: 2px solid rgba(243, 152, 111, 1); */
+    position: relative;
+    background-color: #ACD1BF;
+}
+
+.info-detal-budget .budget-title {
+    height: auto;
+    border-radius: 10px;
+    /* border: 2px solid rgba(243, 152, 111, 1); */
+    position: relative;
+}
+
+.info-detal-budget .budget-title .budget-name {
+    width: 70%;
+    /* border: 1px solid #aaa; */
+    height: 100%;
+    position: relative;
+    border-radius: 10px;
+    background-color: #ACD1BF;
+}
+
+.info-detal-budget .budget-title .memo-edit-btn {
+    width: 27%;
+    /* border: 1px solid #aaa; */
+    height: 100%;
+    position: relative;
+    border-radius: 10px;
+    background-color: #ee7752;
+}
+
+.info-detal-budget .budget-title .memo-edit-btn:hover {
+    background: linear-gradient(-45deg, #2F989C, rgb(80, 193, 197), rgb(38, 136, 139));
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+.dashbo-info-detal .info-detal-std .detal-std-top>h3,
+.info-detal-budget .budget-title .budget-name>h3,
+.info-detal-budget .budget-title .memo-edit-btn>h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: .2rem;
+    font-weight: 100;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+}
+
+.dashbo-info-detal .info-detal-std .detal-std-down div .detal-std-memo .memo-box .memo-box-top .memo-name>h3,
+.dashbo-info-detal .info-detal-std .detal-std-down div .detal-std-memo .memo-box .memo-box-top .memo-edit-btn h3 {
+
+    font-size: 1.2rem;
+    color: #211F20;
+    white-space: nowrap;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.dashbo-info-detal .info-detal-std .detal-std-down div .detal-std-memo .memo-box .memo-box-top .memo-edit-btn h3 {
+    color: #fff;
+    font-weight: 100;
+}
+
+.dashbo-info-detal .info-detal-std .detal-std-down,
+.info-detal-budget .budget-down {
+    height: 80%;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px 0;
+    /* border: 1px solid teal; */
+}
+
+.info-detal-budget .budget-down .budget-progress {
+    width: 100%;
+    /* padding: 10px 0; */
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-detal-budget .budget-down .budget-progress .progressbar {
+    height: 30px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: .5vw 0;
+}
+
+.info-detal-budget .budget-down .budget-progress .progressbar>span.progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #81b2e6;
+}
+
+.info-detal-budget .budget-down .budget-progress .progressbar .progress-name {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #fff;
+    white-space: nowrap;
+}
+
+.dashbo-info-detal .info-detal-std .detal-std-down>div {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info-detal-std .detal-std-down .detal-std-city-info,
+.info-detal-std .detal-std-down .detal-std-memo {
+    height: 100%;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.info-detal-std .detal-std-down .detal-std-city-info {
+    width: 30%;
+}
+
+
+.info-detal-std .detal-std-down .detal-std-city-info .city-v,
+.info-detal-std .detal-std-down .detal-std-city-info .city-lang {
+    width: 90%;
+    height: 50%;
+    /* border: 1px solid #aaa; */
+    margin: 0 auto;
+    position: relative;
+}
+
+.info-detal-std .detal-std-down .detal-std-city-info .city-v h4,
+.info-detal-std .detal-std-down .detal-std-city-info .city-lang h4 {
+    font-size: 1rem;
+}
+
+
+.info-detal-std .detal-std-down .detal-std-city-info .city-v::after {
+    content: '';
+    width: 90%;
+    height: 1px;
+    background-color: rgb(228, 228, 228);
+    z-index: 999;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.info-detal-std .detal-std-down .detal-std-city-info .city-v>span,
+.info-detal-std .detal-std-down .detal-std-city-info .city-lang>span {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.info-detal-std .detal-std-down .detal-std-memo {
+    width: 65%;
+    position: relative;
+}
+
+.info-detal-std .detal-std-down .detal-std-memo .memo-box {
+    height: auto;
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.detal-std-memo .memo-box .memo-box-top {
+    width: 100%;
+    height: 23%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:10px; 
+}
+
+.detal-std-memo .memo-box .memo-box-top .memo-name {
+    border-radius: 10px 0 0 10px;
+    width: 80%;
+    border: 1px solid rgb(228, 228, 228);
+    position: relative;
+}
+
+.detal-std-memo .memo-box .memo-box-top .memo-edit-btn {
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    width: 36%;
+    background-color: #ee7752;
+    position: relative;
+    border: 1px solid #ee7752;
+}
+
+.detal-std-memo .memo-box .memo-box-top .memo-edit-btn:hover {
+    color: #fff;
+    background-color: #ee7752;
+}
+
+.detal-std-memo .memo-box .memo-box-textarea {
+    width: 100%;
+    height: 73%;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+}
+
+
+.detal-std-memo .memo-box .memo-box-textarea .memo-note {
+    width: 90%;
+    height: 90%;
+}
+
+
+.detal-std-memo .memo-box .memo-box-textarea .memo-note ol li {
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding: 8px 10px;
+}
+
+.detal-std-memo .memo-box .memo-box-textarea .memo-note ol .last-item {
+    color: rgb(170, 170, 170);
+}
+
+
+
+
+/* 底部日曆區塊 */
+.dashbod-left .dashbod-left-down {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.dashbod-left .dashbod-left-down .dashbo-calender {
+    width: 100%;
+    /* max-height: 168px;
+    padding: 33px; */
+}
+
+.dashbod-left .dashbod-left-down .dashbo-calender ul {
+    width: 100%;
+    height: auto;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: space-around;
+    padding: 9.5px 0;
+}
+
+
+.dashbod-left .dashbod-left-down .dashbo-calender ul a {
+    border-radius: 999em;
+    color: rgba(238, 235, 216, 0.548);
+    /* padding: 1vw; */
+    height: auto;
+    width: 45px;
+}
+
+.dashbod-left .dashbod-left-down .dashbo-calender ul .active-date {
+    background-color: #fff;
+    color: #211F20;
+}
+
+.dashbod-left .dashbod-left-down .dashbo-calender ul li {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+
+
+@media screen and (min-width:767px) and (max-width: 1199px) {
+    .dashbod-left .dashbod-left-top {
+        /* border: 1px solid rgb(0, 0, 177); */
+        width: 100%;
+        height: 100%;
+        /* min-height: 702.75px; */
+        position: relative;
+        padding: 2vw 0;
+    }
+
+
+    .dashbod-left .dashbod-left-top .dashbo-info .dashbo-info-title {
+        display: none;
+    }
+
+    .dashbo-info-title .info-title-pdname,
+    .dashbo-info-title .info-title-pddate,
+    .dashbo-info-title .info-title-pdcountry {
+        display: none;
+    }
+
+
+    /* 這裏 */
+    .dashbod-left .dashbod-left-top .dashbo-info .dashbo-info-detal {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .dashbo-info-detal .info-detal-std,
+    .dashbo-info-detal .info-detal-budget {
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgb(228, 228, 228);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 1px rgba(0, 0, 0, 0.08);
+        background-color: rgb(246, 246, 246);
+        border-radius: 10px;
+        position: relative;
+        padding: 10px;
+    }
+    .dashbo-info-detal .info-detal-std{
+        margin-bottom: 20px;
+    }
+
+    .dashbo-info-detal .info-detal-std .detal-std-top {
+        height: auto;
+        border-radius: 10px;
+        position: relative;
+        background-color: #ACD1BF;
+    }
+
+    .dashbo-info-detal .info-detal-std .detal-std-top>h3,
+    .info-detal-budget .budget-title .budget-name>h3,
+    .info-detal-budget .budget-title .memo-edit-btn>h3 {
+        font-size: 1.5rem;
+        color: #fff;
+        letter-spacing: .2rem;
+        font-weight: 100;
+        white-space: nowrap;
+        text-align: center;
+        width: 100%;
+    }
+
+    .dashbo-info-detal .info-detal-std .detal-std-down,
+    .info-detal-budget .budget-down {
+        height: auto;
+        border-radius: 10px;
+        position: relative;
+        /* border: 1px solid teal; */
+    }
+
+    .dashbo-info-detal .info-detal-std .detal-std-down>div {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .info-detal-std .detal-std-down .detal-std-city-info,
+    .info-detal-std .detal-std-down .detal-std-memo {
+        height: auto;
+        border: 1px solid rgb(228, 228, 228);
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+    .info-detal-std .detal-std-down .detal-std-city-info .city-v,
+    .info-detal-std .detal-std-down .detal-std-city-info .city-lang {
+        width: 90%;
+        height: auto;
+        /* border: 1px solid #aaa; */
+        margin: 0 auto;
+        position: relative;
+        padding: 8px 10px
+    }
+
+    .info-detal-std .detal-std-down .detal-std-city-info .city-v>span,
+    .info-detal-std .detal-std-down .detal-std-city-info .city-lang>span {
+        display: block;
+        text-align: center;
+    }
+
+    .info-detal-std .detal-std-down .detal-std-memo .memo-box {
+        height: auto;
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .detal-std-memo .memo-box .memo-box-top {
+        width: 100%;
+        height: auto;
+        /* background-color: #aaa; */
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .detal-std-memo .memo-box .memo-box-top .memo-name {
+        width: 80%;
+        border: 1px solid rgb(228, 228, 228);
+        position: relative;
+    }
+
+    .dashbo-info-detal .info-detal-std .detal-std-down div .detal-std-memo .memo-box .memo-box-top .memo-name>h3,
+    .dashbo-info-detal .info-detal-std .detal-std-down div .detal-std-memo .memo-box .memo-box-top .memo-edit-btn h3 {
+
+        font-size: 1.2rem;
+        /* color: #211F20; */
+        white-space: nowrap;
+        letter-spacing: .2rem;
+        text-align: center;
+    }
+
+    .detal-std-memo .memo-box .memo-box-textarea {
+        width: 100%;
+        height: auto;
+        border: 1px solid rgb(228, 228, 228);
+        border-radius: 10px;
+        display: flex;
+        position: relative;
+    }
+
+    .detal-std-memo .memo-box .memo-box-textarea .memo-note {
+        width: 90%;
+        height: 90%;
+    }
+
+    .detal-std-memo .memo-box .memo-box-textarea .memo-note ol li {
+        list-style-type: decimal;
+        list-style-position: inside;
+        padding: 8px 10px;
+    }
+}
+@media screen and (max-width: 766px){
+    .info-title-pdcountry a .info-box .country-flag{
+        display: flex;
+        align-items: center;
+        width: auto;
+    }
+    .info-title-pdcountry a .info-box .country-flag div{
+        width: auto;
+        margin: 0 10px;
+        color: #aaa;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    .country-name{
+        padding: 0;
+    }
+    .country-flag-c{
+        padding: 0;
+    }
+    .info-title-pdcountry a .info-box .country-flag span{
+        width: 30px;
+        height: 30px;
+    }
+    .dashbo-info-detal .info-detal-std, .dashbo-info-detal .info-detal-budget{
+        height: auto;
+        border: unset;
+    box-shadow: unset;
+    background-color: unset;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+    }
+    .dashbo-info-detal .info-detal-std .detal-std-down, .info-detal-budget .budget-down{
+        height: auto;
+    }
+    .dashbo-info-detal .info-detal-std .detal-std-top>h3, .info-detal-budget .budget-title .budget-name>h3, .info-detal-budget .budget-title .memo-edit-btn>h3{
+        padding: 2vw 0
+    }
+    .dashbod-left .dashbod-left-top{
+        padding: 0 0 20px 0;
+    }
+}
+@media screen and (min-width:1200px) {
+    .dashbod-left .dashbod-left-top{
+        padding: 2.5vh 0;
+    }
+}

@@ -1,0 +1,274 @@
+.explore-box .right-box .jpkrn-box article,
+.explore-box .right-box .right-box-down .best-bloger-box article,
+.explore-box .right-box .right-box-down .movie-box article,
+.explore-box .left-box .disney-box .disney-box-contant {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5rem 2rem;
+    width: 80%;
+    background-color: rgba(0, 0, 0, .36);
+}
+
+.explore-box .right-box .jpkrn-box h3,
+.explore-box .right-box .right-box-down .best-bloger-box h3,
+.explore-box .right-box .right-box-down .movie-box h3,
+.disney-box-contant h3 {
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
+}
+
+
+
+.explore-box .right-box .right-box-down .best-bloger-box p {
+    display: none;
+}
+
+
+.explore-box .right-box .right-box-down .movie-box p {
+    /* border: 1px solid black; */
+    color: rgb(112, 112, 112);
+    margin: 20px;
+    /* height: 30%; */
+}
+
+
+@media screen and (min-width:767px) and (max-width: 1199px) {
+    .explore-box .right-box .jpkrn-box article {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1.5rem 2rem;
+        background-color: #fff;
+        width: auto;
+    }
+
+    .explore-box .right-box .jpkrn-box h3,
+    .explore-box .right-box .right-box-down .best-bloger-box h3,
+    .explore-box .right-box .right-box-down .movie-box h3,
+    .disney-box-contant h3 {
+        color: rgba(243, 152, 111, 1);
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: .6rem;
+        text-shadow:unset;
+        line-height: 2.4rem;
+    }
+
+    .explore-box .right-box .right-box-down .best-bloger-box article {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        top: unset;
+        transform: translate(-50%, 0);
+        padding: 1.5rem 2rem;
+        background-color: #fff;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .explore-box .right-box .right-box-down .best-bloger-box h3 {
+        color: rgba(243, 152, 111, 1);
+        font-size: 2rem;
+        font-weight: 100;
+        letter-spacing: .2rem;
+        text-align: left;
+    }
+
+    .explore-box .right-box .right-box-down .best-bloger-box p {
+        display: block;
+        color: rgb(112, 112, 112);
+        font-size: 1rem;
+        font-weight: 100;
+        padding-top: 1rem;
+    }
+
+    .explore-box .right-box .right-box-down .movie-box article {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: unset;
+        width: 100%;
+        padding: 1.5rem 2rem;
+        background-color: rgba(96, 189, 192, 1);
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+    }
+
+    .explore-box .right-box .right-box-down .movie-box h3 {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 100;
+        letter-spacing: .6rem;
+        z-index: 99;
+    }
+
+    .explore-box .right-box .right-box-down .movie-box p {
+        /* border: 1px solid black; */
+        color: rgb(112, 112, 112);
+        margin: 20px;
+        /* height: 30%; */
+    }
+
+    .explore-box .right-box .right-box-down .movie-box span {
+        display: block;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        background-color: green;
+        background-image: url('../../img/andres-iga.jpg');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 74%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .explore-box .left-box .disney-box .disney-box-contant {
+        width: 40%;
+        height: 40%;
+        background-color: rgba(243, 152, 111, 1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+
+    }
+
+    .disney-box-contant h3 {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 100;
+        writing-mode: vertical-lr;
+        /* margin: 0 auto; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        letter-spacing: unset;
+        /* letter-spacing: .6rem; */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .explore-box .right-box .jpkrn-box article {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1.5rem 2rem;
+        background-color: #fff;
+        width: auto;
+    }
+
+    .explore-box .right-box .jpkrn-box h3,
+    .explore-box .right-box .right-box-down .best-bloger-box h3,
+    .explore-box .right-box .right-box-down .movie-box h3,
+    .disney-box-contant h3 {
+        color: rgba(243, 152, 111, 1);
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: .6rem;
+        text-shadow:unset;
+    }
+
+    .explore-box .right-box .right-box-down .best-bloger-box article {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        top: unset;
+        transform: translate(-50%, 0);
+        padding: 1.5rem 2rem;
+        background-color: #fff;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .explore-box .right-box .right-box-down .best-bloger-box h3 {
+        color: rgba(243, 152, 111, 1);
+        font-size: 2rem;
+        font-weight: 100;
+        letter-spacing: .2rem;
+        text-align-last: left;
+    }
+
+    .explore-box .right-box .right-box-down .best-bloger-box p {
+        display: block;
+        color: rgb(112, 112, 112);
+        font-size: 1rem;
+        font-weight: 100;
+        padding-top: 1rem;
+    }
+
+    .explore-box .right-box .right-box-down .movie-box article {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: unset;
+        width: 100%;
+        padding: 1.5rem 2rem;
+        background-color: rgba(96, 189, 192, 1);
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+    }
+
+    .explore-box .right-box .right-box-down .movie-box h3 {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 100;
+        letter-spacing: .6rem;
+        z-index: 99;
+    }
+
+    .explore-box .right-box .right-box-down .movie-box p {
+        /* border: 1px solid black; */
+        color: rgb(112, 112, 112);
+        margin: 20px;
+        /* height: 30%; */
+    }
+
+    .explore-box .right-box .right-box-down .movie-box span {
+        display: block;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        background-color: green;
+        background-image: url('../../img/andres-iga.jpg');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 74%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .explore-box .left-box .disney-box .disney-box-contant {
+        width: 40%;
+        height: 40%;
+        background-color: rgba(243, 152, 111, 1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+
+    }
+
+    .disney-box-contant h3 {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 100;
+        writing-mode: vertical-lr;
+        /* margin: 0 auto; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        letter-spacing: unset;
+        /* letter-spacing: .6rem; */
+    }
+}

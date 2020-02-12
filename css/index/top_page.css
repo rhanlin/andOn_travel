@@ -1,0 +1,486 @@
+.header_index .contents a{
+    display: block;
+}
+
+.toppage {
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+}
+
+/* 首頁第一屏的內容 */
+.topwrapper {
+    position: relative;
+    top: 65.86px;
+    width: 100%;
+    /* height: 92.5vh; */
+    height: calc(100% - 65.85px);
+    /* padding: 90px 0 0 0; */
+    /* border: 1px solid blue; */
+}
+
+.topwrapper .top1 {
+    width: 30%;
+    padding: 4%;
+}
+
+.topwrapper .top1 h2 {
+    display: block;
+    /* width: 247px; */
+}
+
+.topwrapper .top1 h2 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.topwrapper .top1 .top_about {
+    position: relative;
+    width: 100%;
+    height: 90%;
+}
+
+.topwrapper .top1 .top_about_inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    /* -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%); */
+    transform: translateY(-50%);
+}
+
+.topwrapper .top1 h3 {
+    display: block;
+    /* width: 80%; */
+    position: relative;
+    padding: 0 0 80px 0;
+}
+
+.topwrapper .top1 h3 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.topwrapper .top1 .top_about_btn {
+    display: flex;
+    align-items: center;
+    padding: 8% 0;
+    font-size: 1.6vw;
+    color: #ff8d4d;
+    font-family: 'M PLUS Rounded 1c', 'Noto Sans TC';
+    font-weight: 500;
+    position: relative;
+    font-style: normal;
+    margin-bottom: 15px;
+}
+
+.topwrapper .top1 .top_about_btn>span {
+    position: absolute;
+    right: 0;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background: linear-gradient(#f07e6e, #84cdfa, #5ad1cd);
+    animation: rockandroll 1.2s linear infinite;
+}
+
+.topwrapper .top1 .top_about_btn>span span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#f07e6e, #84cdfa, #5ad1cd);
+}
+
+.topwrapper .top1 .top_about_btn>span span:nth-child(1) {
+    filter: blur(5px);
+}
+
+.topwrapper .top1 .top_about_btn>span span:nth-child(2) {
+    filter: blur(10px);
+}
+
+.topwrapper .top1 .top_about_btn>span span:nth-child(3) {
+    filter: blur(25px);
+}
+
+.topwrapper .top1 .top_about_btn>span span:nth-child(4) {
+    filter: blur(50px);
+}
+
+.topwrapper .top1 .top_about_btn>span::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background: #f1f1f1;
+    border: solid white 3px;
+    border-radius: 50%;
+    background-image: url('../../img/icons/compass.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* @media screen and (max-width: 1500px) {
+    .topwrapper .top1 .top_about_btn::after {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        padding: 8px 0 0 0;
+    }
+} */
+
+.topwrapper .top1 p {
+    font-size: 16px;
+    color: #7c7c7c;
+    line-height: 1.5em;
+}
+
+.topwrapper .top_root::before {
+    display: block;
+    content: 'CLICK';
+    background: #FFF;
+    position: absolute;
+    bottom: 15px;
+    z-index: 1100;
+    right: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff8d4d;
+    text-align: center;
+    width: 70px;
+    padding: 12px 0;
+    border-radius: 50px 0 0 50px;
+}
+
+.topwrapper .top_root {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    /* border: 1px solid palevioletred; */
+}
+
+.topwrapper .top2 {
+    background: url('../../img/planing-02.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.topwrapper .top2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 141, 77, 0.65);
+    transition: all .18s ease;
+}
+
+.topwrapper .top_root:hover::after {
+    width: 52vw;
+    height: 52vw;
+    border-radius: 50%;
+}
+
+.topwrapper .top3 {
+    background: url('../../img/goexplore.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.topwrapper .top3::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(72, 237, 237, 0.65);
+    transition: all .18s ease;
+}
+
+.topwrapper .top_root a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1100;
+}
+
+.topwrapper .top_root .top_root_main {
+    display: block;
+    position: absolute;
+    z-index: 1001;
+    top: 50%;
+    left: 50%;
+    color: #FFF;
+    text-align: center;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid black; */
+}
+
+.topwrapper .top_root .top_root_main .ico_co {
+    width: 15vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.topwrapper .top_root .top_root_main .ico_co img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.topwrapper .top_root .top_root_main p {
+    color: #FFF;
+    font-family: 'Noto Sans TC';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 10vw;
+}
+
+
+.topwrapper .top_root:hover .top_root_main p {
+    animation: abc .3s .18s ease;
+    /* text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.18); */
+}
+
+
+/* RWD */
+@media(max-width: 767px) {
+    .topwrapper .top1 {
+        display: none;
+    }
+
+    .topwrapper .top_root .top_root_main p {
+        font-size: 17vw;
+    }
+
+}
+
+@media screen and (min-width:767px) and (max-width: 1199px) {
+    
+
+    .topwrapper {
+        width: 100%;
+        height: calc(100% - 65.86px);
+        top: 0;
+    }
+
+    .topwrapper .top1 {
+        width: 30%;
+        padding: 4%;
+    }
+
+    .topwrapper .top2,
+    .topwrapper .top3 {
+        width: 35%;
+        position: relative;
+    }
+
+    .topwrapper .top2 {
+        /* background: url(../../img/top/bg_top2.jpg) no-repeat center center; */
+        background-size: cover;
+    }
+
+    .topwrapper .top_root {
+        height: 100%;
+    }
+
+    .topwrapper .top_root a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1100;
+    }
+
+    .topwrapper .top_root .top_root_main {
+        display: block;
+        position: absolute;
+        z-index: 1001;
+        top: 50%;
+        left: 50%;
+        color: #FFF;
+        text-align: center;
+        width: 80%;
+        /* height: 50vh; */
+        transform: translate(-50%, -50%);
+    }
+
+    .topwrapper .top_root .top_root_main p {
+        font-size: 10vw;
+    }
+
+    .topwrapper .top_root .top_root_main .ico_co {
+        width: 10vw;
+        position: absolute;
+        top: -7vw;
+        left: 0;
+    }
+
+    .topwrapper .top_root .top_root_main .ico_co img {
+        display: block;
+        width: 65%;
+        height: auto;
+    }
+
+    .topwrapper .top_root:hover::after {
+        width: 14vw;
+        height: 14vw;
+    }
+
+    .topwrapper .top_root::before {
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px) {
+    
+
+    .topwrapper {
+        width: 100%;
+        height: calc(100% - 65.86px);
+        top: 0;
+    }
+
+    .topwrapper .top1 {
+        width: 30%;
+        padding: 4%;
+    }
+
+    .topwrapper .top2,
+    .topwrapper .top3 {
+        width: 35%;
+        position: relative;
+    }
+
+    .topwrapper .top2 {
+        /* background: url(../../img/top/bg_top2.jpg) no-repeat center center; */
+        background-size: cover;
+    }
+
+    .topwrapper .top_root {
+        height: 100%;
+    }
+
+    .topwrapper .top_root a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1100;
+    }
+
+    .topwrapper .top_root .top_root_main {
+        display: block;
+        position: absolute;
+        z-index: 1001;
+        top: 50%;
+        left: 50%;
+        color: #FFF;
+        text-align: center;
+        width: 80%;
+        /* height: 50vh; */
+        transform: translate(-50%, -50%);
+    }
+
+    .topwrapper .top_root .top_root_main p {
+        font-size: 10vw;
+    }
+
+    .topwrapper .top_root .top_root_main .ico_co {
+        width: 10vw;
+        position: absolute;
+        top: -7vw;
+        left: 0;
+    }
+
+    .topwrapper .top_root .top_root_main .ico_co img {
+        display: block;
+        width: 65%;
+        height: auto;
+    }
+
+    .topwrapper .top_root:hover::after {
+        width: 14vw;
+        height: 14vw;
+    }
+
+    .topwrapper .top_root::before {
+        display: none;
+    }
+}
+
+@keyframes abc {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    10% {
+        transform: scale(1.02, .98);
+        /* 1.05,0.9 */
+    }
+
+    20% {
+        transform: scale(1.02, .98);
+        /* 1.06,0.85 */
+    }
+
+    30% {
+        transform: scale(1, 1);
+    }
+
+    40% {
+        transform: scale(.96, 1.09);
+        /* 1.08,1.095 */
+    }
+
+    50% {
+        transform: scale(.96, 1.09);
+        /* 1.15,1.10 */
+    }
+
+    60% {
+        transform: scale(1, 1);
+        /* 1.1,0.85 */
+    }
+
+    70% {
+        transform: scale(1, .98);
+        /* 1.1,0.85 */
+    }
+
+    80% {
+        transform: scale(1, .98);
+        /* 1.05,1.05 */
+    }
+
+    90% {
+        transform: scale(.96, 1);
+        /* 1.05,1.05 */
+    }
+
+    100% {
+        transform: scale(1, 1);
+        /* 1,1 */
+    }
+}
+
+@keyframes rockandroll {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

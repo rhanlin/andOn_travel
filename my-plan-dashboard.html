@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>行程安排 | &on | 旅遊規劃、分享</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/my-plan-dashboard.css">
+    <!-- I miss you -->
+    <link rel="shortcut icon" type="image/gif" href="plugin/I-Miss-You-master/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="plugin/I-Miss-You-master/jquery.iMissYou.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div id="header" class="header_index">
+            <div class="contents flex">
+                <h1>
+                    <a href="./index.html">
+                        <img src="./img/andOn-Logo.svg" alt="">
+                    </a>
+                </h1>
+                <nav>
+                    <ul class="flex">
+                        <li> <a href="./myjourney.html">行程管理</a> </li>
+                        <li> <a href="./explore.html">探索行程</a> </li>
+                        <li> <a href="#">會員中心</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- mobile Navbar -->
+        <div id="navbar" class="navbar">
+            <div class="contents flex">
+                <a id="moreBtn">
+                    <span id="more_nav_box" class="more_nav_box">
+                        <!-- <img src="./img/icons/nav-icon-more.svg" alt=""> -->
+                        <button class="more_nav">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <!-- <p>選項</p> -->
+                    </span>
+                </a>
+                <a href="./my-plan-dashboard.html" id="planDashboard">
+                    <span>
+                        <img src="./img/icons/nav-icon-plan.svg" alt="">
+                        <!-- <p>規劃</p> -->
+                    </span>
+                </a>
+                <a href="./explore.html" id="explore">
+                    <span>
+                        <img src="./img/icons/nav-icon-explore.svg" alt="">
+                        <!-- <p>探索</p> -->
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div id="navbar_ctn" class="navbar_ctn">
+            <div id="white_space"></div>
+            <h3 class="navbar_title">更多選項</h3>
+            <ul class="navbar_menu">
+                <li> <a href="./index.html">首頁</a> </li>
+                <li> <a href="./my-plan-dashboard.html">安排行程</a> </li>
+                <li> <a href="./explore.html"> 探索行程</a></li>
+                <li> <a href="./myjourney.html">行程管理</a> </li>
+                <li> <a href="./myjourney.html">收藏最愛</a> </li>
+                <li> <a href="#">會員中心</a> </li>
+                <li> <a href="#">關於&on</a> </li>
+            </ul>
+        </div>
+        <!-- mobile Navbar END -->
+        <div class="dashbod-left">
+            <div class="dashbod-left-top">
+                <div class="dashbo-info">
+                    <div class="dashbo-info-title">
+                        <div class="info-title-pdname">
+                            <a href="#">
+
+                                <div class="info-box">
+                                    <label for="#">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </label>
+                                    <div>
+                                        <h3>捷克五日遊</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="info-title-pddate">
+                            <a href="#">
+
+                                <div class="info-box">
+                                    <label for="#">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </label>
+                                    <div class="pddate-year">
+                                        <span> 2019</span>
+                                    </div>
+                                    <div class="pddate-date">
+                                        <div>
+                                            <!-- <span> 2019</span> -->
+                                            <span>10.2</span>
+                                            <span>-</span>
+                                            <span>10.5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="info-title-pdcountry">
+                            <a href="#">
+
+                                <div class="info-box">
+                                    <label for="#">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </label>
+                                    <!-- <div class="country-name">
+                                        <span>捷克。布拉格</span>
+                                    </div> -->
+                                    <div class="country-flag">
+                                        <div class="country-name">捷克。布拉格</div>
+                                        <div class="country-flag-c">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dashbo-info-detal">
+                        <div class="info-detal-std">
+                            <div class="detal-std-top">
+                                <h3>旅遊資訊</h3>
+                            </div>
+                            <div class="detal-std-down">
+                                <div>
+                                    <div class="detal-std-city-info">
+                                        <div class="city-v">
+                                            <h4>電壓</h4>
+                                            <span>220V</span>
+                                        </div>
+                                        <div class="city-lang">
+                                            <h4>語言</h4>
+                                            <span>捷克語</span>
+                                        </div>
+                                    </div>
+                                    <div class="detal-std-memo">
+                                        <div class="memo-box">
+                                            <div class="memo-box-top">
+                                                <div class="memo-name">
+                                                    <h3>備忘錄</h3>
+                                                </div>
+                                                <a href="#" class="memo-edit-btn">
+                                                    <h3>編輯</h3>
+                                                </a>
+                                            </div>
+                                            <div class="memo-box-textarea">
+                                                <div class="memo-note">
+                                                    <ol type="1">
+                                                        <li>回台灣要買免稅的酒</li>
+                                                        <li>帶空拍機去拍風景</li>
+                                                        <li>LongChamp包!!</li>
+                                                        <li>Julius Meinl紅帽咖啡</li>
+                                                        <li class="last-item"></li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-detal-budget">
+                            <div class="budget-title">
+                                <div class="budget-name">
+                                    <h3>預算花費</h3>
+                                </div>
+                                <a href="#" class="memo-edit-btn">
+                                    <h3>記一筆</h3>
+                                </a>
+                            </div>
+                            <div class="budget-down">
+                                <div class="budget-progress">
+                                    <div class="progressbar">
+                                        <span class="progress" style="width: 70%">
+                                            <span class="progress-name">交通</span>
+                                        </span>
+                                    </div>
+                                    <div class="progressbar">
+                                        <span class="progress" style="width: 60%">
+                                            <span class="progress-name">飲食</span>
+                                        </span>
+                                    </div>
+                                    <div class="progressbar">
+                                        <span class="progress" style="width: 55%">
+                                            <span class="progress-name">住宿</span>
+                                        </span>
+                                    </div>
+                                    <div class="progressbar">
+                                        <span class="progress" style="width: 60%">
+                                            <span class="progress-name">購物</span>
+                                        </span>
+                                    </div>
+                                    <div class="progressbar">
+                                        <span class="progress" style="width: 10%">
+                                            <span class="progress-name">娛樂</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashbod-left-down">
+                <div class="dashbo-calender">
+                    <ul>
+                        <a href="#">
+                            <li>Sa</li>
+                            <li>31</li>
+                        </a>
+                        <a href="#">
+                            <li>Su</li>
+                            <li>1</li>
+                        </a>
+                        <a href="#" class="active-date">
+                            <li>Mo</li>
+                            <li>2</li>
+                        </a>
+                        <a href="#" class="active-date">
+                            <li>Tu</li>
+                            <li>3</li>
+                        </a>
+                        <a href="#" class="active-date">
+                            <li>We</li>
+                            <li>4</li>
+                        </a>
+                        <a href="#" class="active-date">
+                            <li>Th</li>
+                            <li>5</li>
+                        </a>
+                        <a href="#" class="active-date">
+                            <li>Fr</li>
+                            <li>6</li>
+                        </a>
+                        <a href="#">
+                            <li>Sa</li>
+                            <li>7</li>
+                        </a>
+                        <a href="#">
+                            <li>Su</li>
+                            <li>8</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="schedule-right">
+            <div class="schedule-right-top">
+                    <div class="daybyday">
+                            <ul>
+                                <li class="active-day"> <a href="#"> Day1</a></li>
+                                <li> <a href="#"> Day2</a></li>
+                                <li> <a href="#"> Day3</a></li>
+                                <li> <a href="#"> Day4</a></li>
+                                <li> <a href="#"> Day5</a></li>
+                                <li> <a href="#"> add</a></li>
+                            </ul>
+                        </div>
+                <div class="schedule-plan">
+                    
+                    <div class="plan-item">
+                        <div class="plan-item-left">
+                            <span class="time">上午10:00</span>
+                            <svg class="item-icon icon-bus"></svg>
+                            <span class="time">上午10:30</span>
+                        </div>
+                        <div class="plan-item-right">
+                            <a href="#">
+                                <label for="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <div class="plan-item-name">
+                                    <h4>搭乘接駁車去租車公司牽車</h4>
+                                </div>
+                                <div class="plan-item-address">
+                                    <p>Evropska 15 ,Prague , Czech Republic , 16000</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="holder-item">
+                        <div class="vertical-line">
+                            <span></span>
+                        </div>
+                        <div class="hold-time">
+                            <p>停留30分鐘</p>
+                        </div>
+                        <div class="holder-addbtn">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="plan-item">
+                        <div class="plan-item-left">
+                            <span class="time">上午10:00</span>
+                            <span class="item-icon icon-scooter"></span>
+                            <span class="time">上午10:30</span>
+                        </div>
+                        <div class="plan-item-right">
+                            <a href="#">
+                                <label for="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <div class="plan-item-name">
+                                    <h4>吃午餐:Restaurant U Modre kachnicky</h4>
+                                </div>
+                                <div class="plan-item-address">
+                                    <p>Evropska 15 ,Prague , Czech Republic , 16000</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="holder-item">
+                        <div class="vertical-line">
+                            <span></span>
+                        </div>
+                        <div class="hold-time">
+                            <p>停留30分鐘</p>
+                        </div>
+                        <div class="holder-addbtn">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="plan-item">
+                        <div class="plan-item-left">
+                            <span class="time">上午10:00</span>
+                            <span class="item-icon icon-car"></span>
+                            <span class="time">上午10:30</span>
+                        </div>
+                        <div class="plan-item-right">
+                            <a href="#">
+                                <label for="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <div class="plan-item-name">
+                                    <h4>前往飯店:Hotel Residence Agnes（艾格尼斯居苑酒店）</h4>
+                                </div>
+                                <div class="plan-item-address">
+                                    <p>Evropska 15 ,Prague , Czech Republic , 16000</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="holder-item">
+                        <div class="vertical-line">
+                            <span></span>
+                        </div>
+                        <div class="hold-time">
+                            <p>停留30分鐘</p>
+                        </div>
+                        <div class="holder-addbtn">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="plan-item">
+                        <div class="plan-item-left">
+                            <span class="time">上午10:00</span>
+                            <span class="item-icon icon-bus"></span>
+                            <span class="time">上午10:30</span>
+                        </div>
+                        <div class="plan-item-right">
+                            <a href="#">
+                                <label for="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <div class="plan-item-name">
+                                    <h4>舊城廣場漫遊</h4>
+                                </div>
+                                <div class="plan-item-address">
+                                    <p>Staroměstské nám., 110 00 Josefov, 捷克</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="holder-item">
+                        <div class="vertical-line">
+                            <span></span>
+                        </div>
+                        <div class="hold-time">
+                            <p>停留30分鐘</p>
+                        </div>
+                        <div class="holder-addbtn">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="plan-item">
+                        <div class="plan-item-left">
+                            <span class="time">上午10:00</span>
+                            <span class="item-icon icon-taxi"></span>
+                            <span class="time">上午10:30</span>
+                        </div>
+                        <div class="plan-item-right">
+                            <a href="#">
+                                <label for="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <div class="plan-item-name">
+                                    <h4>布拉格國家博物館</h4>
+                                </div>
+                                <div class="plan-item-address">
+                                    <p>Václavské nám. 68, 110 00 Nové Město, 捷克</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="plan-item">
+                        <div class="plan-item-addbtn">
+                            <a href="#">
+                                <h4>新增行程</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="schedule-right-down">
+                <form class="search-form">
+                    <input type="text" placeholder="快搜關鍵字">
+                    <button type="submit" id="search-button">查看</button>
+                </form>
+                <!-- 做些小動畫 -->
+                <ul class="bg-bubbles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="viewport">
+                <div class="footer-s1">
+                    <a href="./index.html" class="logo"></a>
+                </div>
+                <div class="footer-content">
+                    <ul>
+                        <li><a href="./explore.html"">探索行程</a></li>
+                        <li><a href=" ./myjourney.html">行程管理 </a> </li> <li> <a href="#">會員中心</a> </li>
+                        <li> <a href="#">關於&on</a> </li>
+                        <li> <a href="#">常見問題</a> </li>
+                        <li> <a href="#">聯絡我們</a> </li>
+                        <li> <a href="#">隱私政策</a> </li>
+                        <li> <a href="#">友站連結</a> </li>
+                    </ul>
+                    <div class="footer-emailbox">
+                        <p>立即取得最新旅遊消息</p>
+                        <form class="email-all">
+                            <input type="email" placeholder="email" class="email-input">
+                            <input type="submit" class="email-submit" value="OK">
+                        </form>
+                    </div>
+                </div>
+                <div class="social-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="rhan">
+                    <p>rhan0</p>
+                    <p>+886-0912345678</p>
+                    <p>rhan0@gmail.com</p>
+                </div>
+                <div class="copyReight">Copyright &copy; rhan0 all rights reserved</div>
+            </div>
+        </div>
+    </footer>
+    <!-- I miss you -->
+    <script type="text/javascript" src="plugin/I-Miss-You-master/miss-you.js"></script>
+    <script type="text/javascript" src="./js/fixedHeaderToTop.js"></script>
+    <script type="text/javascript" src="./js/show_menu.js"></script>
+    <script>
+        hambgrMenu(); //show_menu.js
+    </script>
+</body>
+
+</html>

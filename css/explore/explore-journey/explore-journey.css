@@ -1,0 +1,109 @@
+/* @import "../../reset/normalize.css"; */
+@import "../../common/reset.css";
+@import "../../common/top-header.css";
+/* @import "../explore-catelory/explore-cat-content.css"; */
+@import "../explore-catelory/explore-cat-head.css";
+@import "../explore-journey/explore-journey-page.css";
+@import "../../common/flex-box.css";
+/* @import "../../common/text-tittle.css"; */
+@import "../../../css/my-plan-dashboard/left-dashboard.css";
+@import "../../../css/my-plan-dashboard/right-schedule.css";
+@import "../../../css/my-plan-dashboard/right-schedule-search.css";
+@import "../backtopage.css";
+@import "../explore-journey/explore-journey-fv-img.css";
+@import "../../common/navbar.css";
+@import "../../common/footer.css";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    position: relative;
+}
+
+.top-navbar ul>li:nth-child(2)>a {
+    color: rgba(243, 152, 111, 1);
+}
+
+.navbar{
+    display: block;
+    animation: showNavbar 1s;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes abc {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    10% {
+        transform: scale(1.01, .97);
+        /* 1.05,0.9 */
+    }
+
+    20% {
+        transform: scale(1.01, .97);
+        /* 1.06,0.85 */
+    }
+
+    30% {
+        transform: scale(1, 1);
+    }
+
+    40% {
+        transform: scale(.98, 1.08);
+        /* 1.08,1.095 */
+    }
+
+    50% {
+        transform: scale(.98, 1.08);
+        /* 1.15,1.10 */
+    }
+
+    60% {
+        transform: scale(1, 1);
+        /* 1.1,0.85 */
+    }
+
+    70% {
+        transform: scale(1, .97);
+        /* 1.1,0.85 */
+    }
+
+    80% {
+        transform: scale(1, .97);
+        /* 1.05,1.05 */
+    }
+
+    90% {
+        transform: scale(.98, .99);
+        /* 1.05,1.05 */
+    }
+
+    100% {
+        transform: scale(1, 1);
+        /* 1,1 */
+    }
+}

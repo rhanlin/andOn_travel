@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>行程管理 | &on | 旅遊規劃、分享</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/myjourney.css">
+    <!-- I miss you -->
+    <link rel="shortcut icon" type="image/gif" href="./plugin/I-Miss-You-master/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="plugin/I-Miss-You-master/jquery.iMissYou.js"></script>
+</head>
+
+<body>
+    <!-- 選單 -->
+    <header>
+        <div id="header" class="header_index">
+            <div class="contents flex">
+                <h1>
+                    <a href="./index.html">
+                        <img src="./img/andOn-Logo.svg" alt="">
+                    </a>
+                </h1>
+                <nav>
+                    <ul class="flex">
+                        <li> <a href="./myjourney.html">行程管理</a> </li>
+                        <li> <a href="./explore.html">探索行程</a> </li>
+                        <li> <a href="#">會員中心</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="m_formSelect_btn" class="m_formSelect">
+            <h3>新增行程</h3>
+        </div>
+        <div id="dropdown_form" class="top-form">
+            <form action="./my-plan-dashboard.html" method="GET">
+                <div for="month" class="date-select">
+                    <input type="date" class="date-1st" placeholder="2019/9/28">
+                    <input type="date" class="date-2nd" placeholder="2019/9/28">
+                </div>
+                <select id="country" name="country" class="form_control">
+                </select>
+                <input type="text" placeholder="請輸入行程名稱" class="input-text">
+                <a type="button" class="submit" value="建立行程">建立行程</a>
+            </form>
+        </div>
+    </header>
+
+    <main>
+         <!-- mobile Navbar -->
+         <div id="navbar" class="navbar">
+                <div class="contents flex">
+                    <a id="moreBtn">
+                        <span id="more_nav_box" class="more_nav_box">
+                            <!-- <img src="./img/icons/nav-icon-more.svg" alt=""> -->
+                            <button class="more_nav">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <!-- <p>選項</p> -->
+                        </span>
+                    </a>
+                    <a href="./my-plan-dashboard.html" id="planDashboard">
+                        <span>
+                            <img src="./img/icons/nav-icon-plan.svg" alt="">
+                            <!-- <p>規劃</p> -->
+                        </span>
+                    </a>
+                    <a href="./explore.html" id="explore">
+                        <span>
+                            <img src="./img/icons/nav-icon-explore.svg" alt="">
+                            <!-- <p>探索</p> -->
+                        </span>
+                    </a>
+                </div>
+            </div>
+        <div id="navbar_ctn" class="navbar_ctn">
+                <div id="white_space"></div>
+                <h3 class="navbar_title">更多選項</h3>
+                <ul class="navbar_menu">
+                    <li> <a href="./index.html">首頁</a> </li>
+                    <li> <a href="./my-plan-dashboard.html">安排行程</a> </li>
+                    <li> <a href="./explore.html"> 探索行程</a></li>
+                    <li> <a href="./myjourney.html">行程管理</a> </li>
+                    <li> <a href="./myjourney.html">收藏最愛</a> </li>
+                    <li> <a href="#">會員中心</a> </li>
+                    <li> <a href="#">關於&on</a> </li>
+                </ul>
+            </div>
+        <!-- mobile Navbar END -->
+
+        <!-- 內頁標題和分類選單 -->
+        <!-- 01-lv-headmenu.css -->
+        <section>
+            <div class="myjourney-head">
+                <div class="myjourney-head-box">
+                    <h2>行程管理</h2>
+                    <div class="journey-menu">
+                        <button id="m_menu_btn" class="m_menu_btn">
+                            <span class="caret"></span>
+                            <span class="btn_inner">
+                                <span>家族旅遊</span>
+                            </span>
+                        </button>
+                        <div id="m_menu_select" class="dropdown_menu">
+                            <ul class="m_menu">
+                                <li class="active"> <a href="#">家族旅遊</a> </li>
+                                <li> <a href="#">朋友出遊</a> </li>
+                                <li> <a href="#">日韓特輯</a> </li>
+                                <li> <a href="#">新增分類</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 02-lv-journey-content.css -->
+        <section>
+            <div class="journey-content">
+                <div id="collector-menu" class="collector-menu">
+                    <ul>
+                        <li> <a href="#" class="active">全部行程</a> </li>
+                        <li> <a href="#">即將出發</a> </li>
+                        <li> <a href="#">過去行程</a> </li>
+                        <li> <a href="#">我的收藏</a> </li>
+                    </ul>
+                </div>
+                <!-- 自己的行程專輯 -->
+                <!-- 手機版 -->
+                <div id="nav" class="nav">
+                    <a href="#profile" class="nav-item nav-count-1"><i class="icon"></i><span
+                            class="visible">全部行程</span></a>
+                    <a href="#compose" class="nav-item nav-count-2"><i class="icon"></i><span
+                            class="visible">即將出發</span></a>
+                    <a href="#chats" class="nav-item nav-count-3"><i class="icon"></i><span
+                            class="visible">過去行程</span></a>
+                    <a href="#alarm" class="nav-item nav-count-4"><i class="icon"></i><span
+                            class="visible">我的收藏</span></a>
+                    <a href="#toggle" class="mask"><i class="ion-ios-plus-empty"></i></a>
+                </div>
+                <div class="journey-collector">
+                    <div class="journey-box">
+                        <div class="jouney-box-top">
+                            <div class="journey-box-pic"></div>
+                            <a href="./my-plan-dashboard.html" class="journey-box-name">
+                                <div>
+                                    <span class="country-flag-Hallstatt"></span>
+                                    <h3>造訪奧地利絕美小鎮：Hallstatt</h3>
+                                </div>
+                                <div href="#" class="look">前往查看</div>
+                            </a>
+                        </div>
+                        <div class="journey-box-down">
+                            <div class="journey-box-content">
+                                <div class="departure">
+                                    <span>出發:</span>
+                                    <span>台灣</span>
+                                    <span>桃園中正機場</span>
+                                </div>
+                                <div class="travel-time">
+                                    <span>2019/09/20</span>
+                                    <span>-</span>
+                                    <span>2019/09/29</span>
+                                </div>
+                                <div class="journey-tag">
+                                    <a href="#">Tag1</a>
+                                    <a href="#">Tag2</a>
+                                    <a href="#">Tag3</a>
+                                </div>
+                                <div class="journey-share-btm">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="journey-box">
+                        <div class="jouney-box-top">
+                            <div class="journey-box-pic2"></div>
+                            <a href="./my-plan-dashboard.html" class="journey-box-name">
+                                <div>
+                                    <span class="country-flag-kyoto"></span>
+                                    <h3>京阪神5日遊</h3>
+                                </div>
+                                <div href="#" class="look">前往查看</div>
+                            </a>
+                        </div>
+                        <div class="journey-box-down">
+                            <div class="journey-box-content">
+                                <div class="departure">
+                                    <span>出發:</span>
+                                    <span>台灣</span>
+                                    <span>桃園中正機場</span>
+                                </div>
+                                <div class="travel-time">
+                                    <span>2019/09/20</span>
+                                    <span>-</span>
+                                    <span>2019/09/29</span>
+                                </div>
+                                <div class="journey-tag">
+                                    <a href="#">Tag1</a>
+                                    <a href="#">Tag2</a>
+                                    <a href="#">Tag3</a>
+                                </div>
+                                <div class="journey-share-btm">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="journey-box">
+                        <div class="jouney-box-top">
+                            <div class="journey-box-pic3"></div>
+                            <a href="./my-plan-dashboard.html" class="journey-box-name">
+                                <div>
+                                    <span class="country-flag-iceland"></span>
+                                    <h3>冰島12天自助旅行</h3>
+                                </div>
+                                <div href="#" class="look">前往查看</div>
+                            </a>
+                        </div>
+                        <div class="journey-box-down">
+                            <div class="journey-box-content">
+                                <div class="departure">
+                                    <span>出發:</span>
+                                    <span>台灣</span>
+                                    <span>桃園中正機場</span>
+                                </div>
+                                <div class="travel-time">
+                                    <span>2019/09/20</span>
+                                    <span>-</span>
+                                    <span>2019/09/29</span>
+                                </div>
+                                <div class="journey-tag">
+                                    <a href="#">Tag1</a>
+                                    <a href="#">Tag2</a>
+                                    <a href="#">Tag3</a>
+                                </div>
+                                <div class="journey-share-btm">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="viewport">
+                <div class="footer-s1">
+                    <a href="./index.html" class="logo"></a>
+                </div>
+                <div class="footer-content">
+                    <ul>
+                        <li><a href="./explore.html"">探索行程</a></li>
+                        <li><a href=" ./myjourney.html">行程管理 </a> </li> <li> <a href="#">會員中心</a> </li>
+                        <li> <a href="#">關於&on</a> </li>
+                        <li> <a href="#">常見問題</a> </li>
+                        <li> <a href="#">聯絡我們</a> </li>
+                        <li> <a href="#">隱私政策</a> </li>
+                        <li> <a href="#">友站連結</a> </li>
+                    </ul>
+                    <div class="footer-emailbox">
+                        <p>立即取得最新旅遊消息</p>
+                        <form class="email-all">
+                            <input type="email" placeholder="email" class="email-input">
+                            <input type="submit" class="email-submit" value="OK">
+                        </form>
+                    </div>
+                </div>
+                <div class="social-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="rhan">
+                    <p>rhan0</p>
+                    <p>+886-0912345678</p>
+                    <p>rhan0@gmail.com</p>
+                </div>
+                <div class="copyReight">Copyright &copy; rhan0 all rights reserved</div>
+            </div>
+        </div>
+    </footer>
+    <!-- I miss you -->
+    <script type="text/javascript" src="plugin/I-Miss-You-master/miss-you.js"></script>
+    <script type="text/javascript" src="./js/fixedHeaderToTop.js"></script>
+    <script type="text/javascript" src="./js/country_select.js"></script>
+    <script type="text/javascript" src="./js/show_menu.js"></script>
+    <script>
+        window.onscroll = function () {
+            // scrollTop() //fixedHeaderToTop.js
+        };
+        showSelectFrom();
+        showJourneyMenu();
+        showColMenu()
+        hambgrMenu(); //show_menu.js
+    </script>
+</body>
+
+</html>
